@@ -1767,7 +1767,7 @@ Usage: codyhouse.co/license
   height: calc(100vh - 70px);
 }
 .intro .intro__background-image {
-  background-image: url("img/svg/usa.svg");
+  background-image: url("../img/svg/usa.svg");
   background-size: 75%;
   background-position: center;
   background-repeat: no-repeat;
