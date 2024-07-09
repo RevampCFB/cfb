@@ -17,7 +17,9 @@
         legend: "Total ($ Millions)",
         labels: true,
       },
-      datasets: [{ data: [62.5, 50, 31.67, 17.14] }],
+      datasets: [{
+        data: [62.5, 50, 31.67, 17.14]
+      }],
       column: {
         width: "60%",
         gap: "2px",
@@ -31,7 +33,7 @@
             chartOptions.xAxis.labels[index] +
             ":</span> $" +
             chartOptions.datasets[datasetIndex].data[index] +
-            ""
+            " M"
           );
         },
       },
@@ -54,7 +56,9 @@
         legend: "Total ($ Millions)",
         labels: true,
       },
-      datasets: [{ data: [75, 50, 25, 15, 8, 4] }],
+      datasets: [{
+        data: [75, 50, 25, 15, 8, 4]
+      }],
       column: {
         width: "60%",
         gap: "2px",
@@ -68,7 +72,7 @@
             chartOptions.xAxis.labels[index] +
             ":</span> $" +
             chartOptions.datasets[datasetIndex].data[index] +
-            ""
+            " M"
           );
         },
       },
@@ -105,9 +109,12 @@
         legend: "Total",
         labels: true,
       },
-      datasets: [
-        { data: [1, 2, 3, 12, 8, 7, 10, 4, 9, 5, 16, 3] },
-        { data: [4, 8, 10, 12, 15, 11, 7, 3, 5, 2, 12, 6] },
+      datasets: [{
+          data: [1, 2, 3, 12, 8, 7, 10, 4, 9, 5, 16, 3]
+        },
+        {
+          data: [4, 8, 10, 12, 15, 11, 7, 3, 5, 2, 12, 6]
+        },
       ],
       column: {
         width: "60%",
@@ -167,9 +174,12 @@
         legend: "Total",
         labels: true,
       },
-      datasets: [
-        { data: [1, 2, 3, 12, 8, 7, 10, 4, 9, 5, 16, 3] },
-        { data: [4, 8, 10, 12, 15, 11, 7, 3, 5, 2, 12, 6] },
+      datasets: [{
+          data: [1, 2, 3, 12, 8, 7, 10, 4, 9, 5, 16, 3]
+        },
+        {
+          data: [4, 8, 10, 12, 15, 11, 7, 3, 5, 2, 12, 6]
+        },
       ],
       column: {
         width: "60%",
@@ -228,7 +238,9 @@
         legend: "Total",
         labels: true,
       },
-      datasets: [{ data: [1, 4, 8, 5, 3, -2, -5, -7, 4, 9, 5, 10, 3] }],
+      datasets: [{
+        data: [1, 4, 8, 5, 3, -2, -5, -7, 4, 9, 5, 10, 3]
+      }],
       column: {
         width: "60%",
         gap: "2px",
