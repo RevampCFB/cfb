@@ -1,0 +1,26 @@
+@use "../config" as *;
+@use "_1_card-v15.scss" as *;
+
+/* -------------------------------- 
+
+File#: _1_feature-v21
+Title: Feature v21
+Descr: Display a feature with a card
+
+-------------------------------- */
+
+@include min-width(md) {
+  div {
+    &.feature-v21__items-position {
+      align-items: center;
+    }
+  }
+}
+
+@include min-width(xl) {
+  div {
+    &.feature-v21__items-position {
+      align-items: stretch;
+    }
+  }
+}

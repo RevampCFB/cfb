@@ -1,0 +1,42 @@
+@use "reset";
+@use "config" as *; // customize the framework
+
+// copy & modify these templates locally
+@use "typography";
+@use "icons";
+@use "buttons";
+@use "forms";
+
+// components
+@use "components/1_accordion" as *;
+@use "components/1_anim-menu-btn" as *;
+@use "components/1_boxed-feature" as *;
+@use "components/1_card-v14" as *;
+@use "components/1_card-v15" as *;
+@use "components/1_countup" as *;
+@use "components/1_feature-v2" as *;
+@use "components/1_feature-v10" as *;
+@use "components/1_feature-v20" as *;
+@use "components/1_feature-v21" as *;
+@use "components/1_hero" as *;
+@use "components/1_how-it-works" as *;
+@use "components/1_intro" as *;
+@use "components/1_list" as *;
+@use "components/1_main-footer-v3" as *;
+@use "components/1_overscroll-section" as *;
+@use "components/1_reveal-effects" as *;
+@use "components/1_scrolling-animations" as *;
+@use "components/1_smooth-scrolling" as *;
+@use "components/1_swipe-content" as *;
+@use "components/1_table" as *;
+@use "components/1_ticker" as *;
+@use "components/2_accordion-v2" as *;
+@use "components/2_chart" as *;
+@use "components/2_flexi-header" as *;
+@use "components/2_table-of-contents" as *;
+@use "components/3_column-chart" as *;
+@use "components/3_faq-v3" as *;
+
+@use "util";
+
+// Change: 0
