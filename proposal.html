@@ -7,36 +7,107 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' 'sha256-Bed9qzUU2IVkAAxp73fh88GAnMchALEvifOr4XcPQ/4='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:;" />
     <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
-    <meta
-      http-equiv="Strict-Transport-Security"
-      content="max-age=31536000; includeSubDomains; preload" />
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta name="referrer" content="no-referrer" />
     <meta http-equiv="Expect-CT" content="max-age=86400, enforce" />
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
 
+    <title>Revamp CFB | Proposed New Format</title>
+    <meta
+      name="description"
+      itemprop="description"
+      content="Changing the NCAA College Football to a new and improved format that provides
+    a chance for all teams to succeed and resolves current format issues." />
+    <meta name="keywords" itemprop="keywords" content="Revamp CFB, CFB, College Football, College, NCAA, NCAA football, NCAA College Football, Revamp CFB New Foramat" />
+
+    <link rel="canonical" href="https://revampcfb.com/proposal.html" />
+    <link rel="icon" type="image/svg+xml" href="img/svg/revamp-cfb-logo-favicon.svg" />
+
+    <meta property="og:url" content="https://revampcfb.com/proposal.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Revamp CFB | New CFB Format" />
+    <meta property="og:description" content="Learn about a new college football format." />
+    <meta property="og:image" content="img/jpg/revamp-cfb-social.jpg" />
+    <meta property="og:site_name" content="Revamp CFB" />
+
     <link rel="stylesheet" href="css/style.css" />
-    <title>Revamp CFB</title>
   </head>
 
   <body data-theme="default" id="top">
     <header class="f-header js-f-header position-relative">
       <div class="f-header__mobile-content container max-width-lg">
-        <a href="/" class="f-header__logo">
-          <svg viewBox="0 0 175 30">
-            <title>Go to homepage</title>
+        <a href="#0" class="f-header__logo">
+          <svg viewBox="0 0 175 30" style="enable-background: new 0 0 175 30">
             <g fill="var(--color-white)">
-              <path
-                d="M109.9 8.6c1-1.9 2.3-3.3 4.1-4.3 1.8-1 3.9-1.5 6.3-1.5 2.1 0 4 .4 5.6 1.2 1.6.8 3 1.9 4 3.3s1.7 3.1 2.1 5h-8c-.4-.8-.9-1.4-1.5-1.9-.7-.4-1.4-.7-2.3-.7-1.3 0-2.3.5-3 1.4-.7 1-1.1 2.2-1.1 3.8 0 1.6.4 2.9 1.1 3.8.7 1 1.7 1.4 3 1.4.9 0 1.6-.2 2.3-.7.7-.4 1.2-1.1 1.5-1.9h8c-.3 1.9-1 3.6-2.1 5-1 1.4-2.4 2.5-4 3.3-1.6.8-3.5 1.2-5.6 1.2-2.4 0-4.5-.5-6.3-1.5-1.8-1-3.2-2.5-4.1-4.3-1-1.9-1.4-4-1.4-6.4s.4-4.3 1.4-6.2zM151.7 3v6h-9.5v3.3h6.8V18h-6.8v9.1h-7.6V3h17.1zM173.8 16.8c.8 1.1 1.2 2.3 1.2 3.7 0 2.1-.7 3.7-2.1 4.9-1.4 1.1-3.4 1.7-6 1.7h-12.6V3h12.3c2.4 0 4.4.5 5.8 1.6 1.4 1.1 2.1 2.6 2.1 4.7 0 1.4-.4 2.6-1.1 3.6-.7 1-1.7 1.6-2.9 1.9 1.4.3 2.5 1 3.3 2zm-12-4.4h2.9c.7 0 1.2-.1 1.5-.4.3-.3.5-.7.5-1.3 0-.6-.2-1-.5-1.3-.3-.3-.8-.4-1.5-.4h-2.9v3.4zm5 8.2c.3-.3.5-.7.5-1.3 0-1.2-.7-1.7-2-1.7h-3.4V21h3.4c.6 0 1.2-.1 1.5-.4zM12.8 26.1 7.4 15.5c1-.1 2-.4 2.8-.9.8-.4 1.5-1.1 2-2 .5-.9.7-2 .7-3.4 0-1.6-.3-2.9-.9-3.8-.6-.9-1.5-1.6-2.5-2-1-.4-2.2-.6-3.4-.6H.6c-.3 0-.6.3-.6.6 0 .4.3.6.6.6h5.5c1.7 0 3 .4 4.1 1.2 1 .8 1.6 2.1 1.6 3.9 0 1.8-.5 3.2-1.6 4-1 .8-2.4 1.2-4.1 1.2H3.2c-.3 0-.6.3-.6.6s.3.6.6.6h2.9l5.3 10.3c.1.2.2.5.4.8.2.3.3.4.6.4.1 0 .2 0 .3-.1.1-.1.2-.1.2-.2.1-.1.1-.2.1-.3v-.2c-.1 0-.1 0-.2-.1zM16.9 14.9c0 .3.3.6.6.6h11.8c.2 0 .3-.1.4-.2.1-.1.1-.2.1-.4s0-.3-.1-.4c-.1-.1-.2-.2-.4-.2H17.4c-.3 0-.5.3-.5.6zM16.9 26.5c0 .3.3.6.6.6h11.8c.2 0 .3-.1.4-.2.1-.1.1-.2.1-.4s0-.3-.1-.4c-.1-.1-.2-.2-.4-.2H17.4c-.3 0-.5.2-.5.6zM16.9 3.4c0 .3.3.6.6.6H32c.2 0 .3-.1.4-.2.1-.1.1-.2.1-.4s0-.3-.1-.4c-.1-.1-.2-.2-.4-.2H17.4c-.3 0-.5.3-.5.6z" />
-              <path
-                d="M39.2 27.2c-.1 0-.3 0-.4-.1-.1-.1-.2-.2-.2-.3L31.4 3.6v-.2c0-.1 0-.2.1-.3 0-.1.1-.1.2-.2.1 0 .2-.1.3-.1.1 0 .3 0 .4.1.1.1.2.2.2.3l6.6 21.5 6.6-21.5c0-.2.1-.3.2-.3.1-.1.2-.1.3-.1.1 0 .2 0 .3.1.1.1.2.1.2.2.1.1.2.2.2.3v.2l-7.1 23.2c0 .2-.1.3-.2.3s-.4.1-.5.1zM62.9 26.4 55.8 3.2c0-.2-.1-.3-.2-.3-.1-.1-.2-.1-.4-.1s-.3 0-.4.1c-.1.1-.2.2-.2.4l-7.2 23.2v.2c0 .1 0 .2.1.3l.2.2c.1 0 .2.1.3.1.1 0 .3 0 .4-.1.1-.1.2-.2.2-.3l6.6-21.5 6.6 21.5c0 .2.1.3.2.3.1.1.2.1.3.1.1 0 .2 0 .3-.1.1-.1.2-.1.2-.2.1-.1.1-.2.1-.3v-.3zM67.1 27.1c-.2 0-.3 0-.4-.1-.1-.1-.2-.2-.2-.4v-23c0-.2.1-.4.2-.4.1-.1.3-.1.4-.1.2 0 .3.1.4.2.1.2.3.3.4.5.1 0 .2.1.2.2l6.4 12.6L81 4c.1-.1.1-.3.2-.4.1-.2.2-.4.4-.5.1-.2.3-.2.4-.2.2 0 .3 0 .4.1.1.1.2.2.2.4v23c0 .2-.1.3-.2.4-.1.1-.3.1-.4.1-.2 0-.3 0-.4-.1-.1-.1-.2-.2-.2-.4V5.8l-6.3 12.1c-.1.2-.2.4-.3.5-.1.1-.2.1-.3.1-.1 0-.2 0-.3-.1-.1-.1-.2-.3-.3-.5L67.7 5.8v20.7c0 .2-.1.3-.2.4-.1.1-.3.2-.4.2zM100.2 5.7c-.6-1-1.4-1.7-2.3-2.2-1-.5-2.1-.7-3.3-.7h-5.9c-.3 0-.6.3-.6.6s.3.6.6.6h5.9c1.7 0 3 .5 3.9 1.4.9.9 1.4 2.3 1.4 4.3v.4c0 1.9-.5 3.3-1.4 4.3-.9.9-2.2 1.4-3.9 1.4h-5.7c-.4 0-.8.3-.8.8v10c0 .2.1.3.2.4.1.1.3.1.4.1.2 0 .3 0 .4-.1.1-.1.2-.2.2-.4v-9.5h5.3c1.2 0 2.3-.2 3.3-.7 1-.5 1.8-1.2 2.3-2.2.6-1 .9-2.3.9-4v-.5c-.1-1.7-.3-3-.9-4z" />
+              <g>
+                <path
+                  d="M120.2,9.8c0.9,0,1.6,0.3,2.3,0.7c0.6,0.5,1.1,1.1,1.5,1.9h8c-0.4-1.9-1.1-3.6-2.1-5c-1-1.4-2.4-2.5-4-3.3
+c-1.6-0.8-3.5-1.2-5.6-1.2c-2.4,0-4.5,0.5-6.3,1.5c-1.8,1-3.1,2.4-4.1,4.3c-1,1.8-1.4,3.8-1.4,6.2c0,2.4,0.4,4.5,1.4,6.4
+c0.9,1.8,2.3,3.3,4.1,4.3c1.8,1,3.9,1.5,6.3,1.5c2.1,0,4-0.4,5.6-1.2c1.6-0.8,3-1.9,4-3.3c1.1-1.4,1.8-3.1,2.1-5h-8
+c-0.3,0.8-0.8,1.5-1.5,1.9c-0.7,0.5-1.4,0.7-2.3,0.7c-1.3,0-2.3-0.4-3-1.4c-0.7-0.9-1.1-2.2-1.1-3.8c0-1.6,0.4-2.8,1.1-3.8
+C117.9,10.3,118.9,9.8,120.2,9.8z" />
+                <polygon points="134.5,27.1 142.1,27.1 142.1,18 149,18 149,12.2 142.1,12.2 142.1,8.9 151.7,8.9 151.7,2.9 134.5,2.9 		" />
+                <g>
+                  <path d="M29.2,25.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,25.9,29.2,25.9z" />
+                  <path d="M29.2,14.4H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,14.4,29.2,14.4z" />
+                  <path d="M29.2,2.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,2.9,29.2,2.9z" />
+                </g>
+                <g>
+                  <path
+                    d="M13.4,8.6C13.2,5.3,10.3,2.9,7,2.9H0.6C0.3,2.9,0,3.1,0,3.5c0,0.3,0.3,0.6,0.6,0.6H7c2.7,0,5.2,2.1,5.3,4.8
+  c0.2,3-2.2,5.5-5.2,5.5H3.2c-0.3,0-0.6,0.3-0.6,0.6c0,0.3,0.3,0.6,0.6,0.6h2.9l5.7,11.2c0.2,0.3,0.5,0.4,0.8,0.3
+  c0.3-0.1,0.5-0.5,0.3-0.8L7.4,15.6C11,15.4,13.8,12.3,13.4,8.6z" />
+                </g>
+                <path
+                  d="M95.1,2.9h-6.5c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h6.5c2.7,0,5.2,2.1,5.3,4.8c0.2,3-2.2,5.5-5.2,5.5h-6.6
+c-0.3,0-0.6,0.3-0.6,0.6v11.5h0c0,0,0,0,0,0c0,0.3,0.3,0.6,0.6,0.6c0.3,0,0.6-0.3,0.6-0.6c0,0,0,0,0,0h0V15.5h6
+c3.7,0,6.7-3.2,6.3-7C101.2,5.3,98.4,2.9,95.1,2.9z" />
+              </g>
+              <g>
+                <path
+                  d="M173.8,16.8c0.8,1.1,1.2,2.3,1.2,3.7c0,2.1-0.7,3.8-2.1,4.9c-1.4,1.1-3.4,1.7-6,1.7h-12.7V2.9h12.3c2.5,0,4.4,0.5,5.8,1.6
+c1.4,1.1,2.1,2.6,2.1,4.7c0,1.4-0.4,2.6-1.1,3.6c-0.7,1-1.7,1.6-3,1.9C171.8,15,173,15.7,173.8,16.8z M161.8,12.3h2.9
+c0.7,0,1.2-0.1,1.5-0.4c0.3-0.3,0.5-0.7,0.5-1.3c0-0.6-0.2-1-0.5-1.3s-0.8-0.4-1.5-0.4h-2.9V12.3z M166.7,20.6
+c0.3-0.3,0.5-0.7,0.5-1.3c0-1.2-0.7-1.7-2-1.7h-3.5V21h3.5C165.9,21,166.4,20.9,166.7,20.6z" />
+              </g>
+              <g>
+                <path
+                  d="M39.4,27.1L39.4,27.1c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23C31.5,3.4,31.7,3,32,2.9v0c0.3-0.1,0.7,0.1,0.7,0.4l7,23
+C39.9,26.6,39.7,27,39.4,27.1z" />
+                <path
+                  d="M39,27.1L39,27.1c0.3,0.1,0.7-0.1,0.7-0.4l7-23c0.1-0.3-0.1-0.7-0.4-0.7v0c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23
+C38.5,26.6,38.7,27,39,27.1z" />
+              </g>
+              <g>
+                <path
+                  d="M54.9,2.9L54.9,2.9c0.3-0.1,0.7,0.1,0.7,0.4l7,23c0.1,0.3-0.1,0.7-0.4,0.7l0,0c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23
+C54.4,3.4,54.6,3,54.9,2.9z" />
+                <path
+                  d="M55.3,2.9L55.3,2.9c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23c-0.1,0.3,0.1,0.7,0.4,0.7h0c0.3,0.1,0.7-0.1,0.7-0.4l7-23
+C55.7,3.4,55.6,3,55.3,2.9z" />
+              </g>
+              <g>
+                <path
+                  d="M67.8,27.1L67.8,27.1c-0.3,0-0.6-0.3-0.6-0.6v-23c0-0.3,0.3-0.6,0.6-0.6l0,0c0.3,0,0.6,0.3,0.6,0.6v23
+C68.4,26.8,68.2,27.1,67.8,27.1z" />
+                <path
+                  d="M75.3,18.2L75.3,18.2c-0.3,0.2-0.7,0-0.8-0.3L67.3,3.8c-0.2-0.3,0-0.7,0.3-0.8v0c0.3-0.2,0.7,0,0.8,0.3l7.2,14.2
+C75.7,17.7,75.6,18.1,75.3,18.2z" />
+              </g>
+              <g>
+                <path
+                  d="M82.2,27.1L82.2,27.1c0.3,0,0.6-0.3,0.6-0.6v-23c0-0.3-0.3-0.6-0.6-0.6l0,0c-0.3,0-0.6,0.3-0.6,0.6v23
+C81.6,26.8,81.9,27.1,82.2,27.1z" />
+                <path
+                  d="M74.7,18.2L74.7,18.2c0.3,0.2,0.7,0,0.8-0.3l7.2-14.2c0.2-0.3,0-0.7-0.3-0.8v0c-0.3-0.2-0.7,0-0.8,0.3l-7.2,14.2
+C74.3,17.7,74.4,18.1,74.7,18.2z" />
+              </g>
             </g>
           </svg>
         </a>
 
-        <button
-          class="anim-menu-btn js-anim-menu-btn f-header__nav-control"
-          aria-label="Toggle menu">
+        <button class="anim-menu-btn js-anim-menu-btn f-header__nav-control" aria-label="Toggle menu">
           <i class="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden="true"></i>
         </button>
       </div>
@@ -50,18 +121,13 @@
                 <g fill="var(--color-white)">
                   <path
                     d="M109.9 8.7c1-1.9 2.3-3.3 4.1-4.3 1.8-1 3.9-1.5 6.3-1.5 2.1 0 4 .4 5.6 1.2 1.6.8 3 1.9 4 3.3s1.7 3.1 2.1 5h-8c-.4-.8-.9-1.4-1.5-1.9-.7-.4-1.4-.7-2.3-.7-1.3 0-2.3.5-3 1.4-.7 1-1.1 2.2-1.1 3.8 0 1.6.4 2.9 1.1 3.8.7 1 1.7 1.4 3 1.4.9 0 1.6-.2 2.3-.7.7-.4 1.2-1.1 1.5-1.9h8c-.3 1.9-1 3.6-2.1 5-1 1.4-2.4 2.5-4 3.3-1.6.8-3.5 1.2-5.6 1.2-2.4 0-4.5-.5-6.3-1.5-1.8-1-3.2-2.5-4.1-4.3-1-1.9-1.4-4-1.4-6.4s.4-4.4 1.4-6.2zM151.7 3v6h-9.5v3.3h6.8V18h-6.8v9.1h-7.6V3h17.1zM173.8 16.9c.8 1.1 1.2 2.3 1.2 3.7 0 2.1-.7 3.7-2.1 4.9-1.4 1.1-3.4 1.7-6 1.7h-12.6V3h12.3c2.4 0 4.4.5 5.8 1.6 1.4 1.1 2.1 2.6 2.1 4.7 0 1.4-.4 2.6-1.1 3.6-.7 1-1.7 1.6-2.9 1.9 1.4.3 2.5 1 3.3 2.1zm-12-4.5h2.9c.7 0 1.2-.1 1.5-.4.3-.3.5-.7.5-1.3 0-.6-.2-1-.5-1.3-.3-.3-.8-.4-1.5-.4h-2.9v3.4zm5 8.3c.3-.3.5-.7.5-1.3 0-1.2-.7-1.7-2-1.7h-3.4v3.4h3.4c.6 0 1.2-.2 1.5-.4zM73.9 18.1 66.5 3.8c-.1-.3 0-.7.3-.8.3-.1.7 0 .8.3l7.3 14.3c.1.3 0 .7-.3.8-.2.1-.6 0-.7-.3z" />
-                  <path
-                    d="M66.5 26.5v-23c0-.3.3-.6.6-.6s.6.3.6.6v23c0 .3-.3.6-.6.6-.4 0-.6-.3-.6-.6zM74.9 18.1l7.3-14.3c.1-.3 0-.7-.3-.8-.3-.1-.7 0-.8.3l-7.3 14.3c-.1.3 0 .7.3.8.3.1.7 0 .8-.3z" />
-                  <path
-                    d="M82.3 26.5v-23c0-.3-.3-.6-.6-.6s-.6.3-.6.6v23c0 .3.3.6.6.6.4 0 .6-.3.6-.6zM38.6 26.8 31.5 3.5c-.1-.3.1-.6.4-.7.3-.1.6.1.7.4l7.1 23.4c.1.3-.1.6-.4.7-.2 0-.6-.1-.7-.5z" />
-                  <path
-                    d="m39.8 26.8 7.1-23.4c.1-.3-.1-.6-.4-.7-.3-.1-.6.1-.7.4l-7.1 23.4c-.1.3.1.6.4.7.3.1.6 0 .7-.4zM55.7 3.1l7.1 23.4c.1.3-.1.6-.4.7-.3.1-.6-.1-.7-.4L54.5 3.5c-.1-.3.1-.6.4-.7.3-.2.7 0 .8.3z" />
+                  <path d="M66.5 26.5v-23c0-.3.3-.6.6-.6s.6.3.6.6v23c0 .3-.3.6-.6.6-.4 0-.6-.3-.6-.6zM74.9 18.1l7.3-14.3c.1-.3 0-.7-.3-.8-.3-.1-.7 0-.8.3l-7.3 14.3c-.1.3 0 .7.3.8.3.1.7 0 .8-.3z" />
+                  <path d="M82.3 26.5v-23c0-.3-.3-.6-.6-.6s-.6.3-.6.6v23c0 .3.3.6.6.6.4 0 .6-.3.6-.6zM38.6 26.8 31.5 3.5c-.1-.3.1-.6.4-.7.3-.1.6.1.7.4l7.1 23.4c.1.3-.1.6-.4.7-.2 0-.6-.1-.7-.5z" />
+                  <path d="m39.8 26.8 7.1-23.4c.1-.3-.1-.6-.4-.7-.3-.1-.6.1-.7.4l-7.1 23.4c-.1.3.1.6.4.7.3.1.6 0 .7-.4zM55.7 3.1l7.1 23.4c.1.3-.1.6-.4.7-.3.1-.6-.1-.7-.4L54.5 3.5c-.1-.3.1-.6.4-.7.3-.2.7 0 .8.3z" />
                   <path
                     d="m54.5 3.1-7.1 23.4c-.1.3.1.6.4.7.3.1.6-.1.7-.4l7.1-23.4c.1-.3-.1-.6-.4-.7-.2-.1-.6.1-.7.4zM29.2 15.6H17.4c-.3 0-.6-.3-.6-.6s.3-.6.6-.6h11.8c.3 0 .6.3.6.6s-.3.6-.6.6zM29.2 4.1H17.4c-.3 0-.6-.3-.6-.6s.3-.6.6-.6h11.8c.3 0 .6.3.6.6s-.3.6-.6.6zM29.2 27.1H17.4c-.3 0-.6-.3-.6-.6s.3-.6.6-.6h11.8c.3 0 .6.3.6.6s-.3.6-.6.6zM11.8 26.8 6 15.4c-.2-.3 0-.7.3-.8.3-.2.7 0 .8.3l5.8 11.4c.2.3 0 .7-.3.8-.3.1-.6 0-.8-.3z" />
-                  <path
-                    d="M7 2.9H.6c-.3 0-.6.2-.6.6 0 .3.3.6.6.6H7c2.7 0 5.2 2.1 5.3 4.8.2 3-2.2 5.5-5.2 5.5H3.2c-.3 0-.6.3-.6.6s.3.6.6.6h3.9c3.7 0 6.7-3.2 6.3-7-.2-3.3-3.1-5.7-6.4-5.7zM89.271 15.083v12.1h-1.2v-12.1z" />
-                  <path
-                    d="M95.1 2.9h-6.4c-.3 0-.6.3-.6.6s.3.6.6.6h6.4c2.7 0 5.2 2.1 5.3 4.8.2 3-2.2 5.5-5.2 5.5h-6.6c-.3 0-.6.3-.6.6s.3.6.6.6h6.6c3.7 0 6.7-3.2 6.3-7-.2-3.3-3.1-5.7-6.4-5.7z" />
+                  <path d="M7 2.9H.6c-.3 0-.6.2-.6.6 0 .3.3.6.6.6H7c2.7 0 5.2 2.1 5.3 4.8.2 3-2.2 5.5-5.2 5.5H3.2c-.3 0-.6.3-.6.6s.3.6.6.6h3.9c3.7 0 6.7-3.2 6.3-7-.2-3.3-3.1-5.7-6.4-5.7zM89.271 15.083v12.1h-1.2v-12.1z" />
+                  <path d="M95.1 2.9h-6.4c-.3 0-.6.3-.6.6s.3.6.6.6h6.4c2.7 0 5.2 2.1 5.3 4.8.2 3-2.2 5.5-5.2 5.5h-6.6c-.3 0-.6.3-.6.6s.3.6.6.6h6.6c3.7 0 6.7-3.2 6.3-7-.2-3.3-3.1-5.7-6.4-5.7z" />
                 </g>
               </svg>
             </a>
@@ -72,11 +138,14 @@
             <li class="f-header__item">
               <a href="proposal.html" class="f-header__link">Proposal</a>
             </li>
+            <li class="f-header__item">
+              <a href="faq.html" class="f-header__link">FAQ</a>
+            </li>
           </ul>
 
           <ul class="f-header__list flex-grow flex-basis-0 justify-end@md">
             <li class="f-header__item">
-              <a href="#0" class="f-header__btn btn btn--primary">Sign Petition</a>
+              <a href="#0" class="f-header__btn btn btn--primary color-black">Sign Petition</a>
             </li>
           </ul>
         </div>
@@ -84,16 +153,13 @@
     </header>
 
     <main class="container max-width-adaptive-lg">
-      <section class="position-relative z-index-1 padding-y-xl">
+      <section class="position-relative z-index-1 padding-y-xl border-0">
         <div class="grid gap-lg feature-v21__items-position">
           <div class="col-8@xl col-6@md">
             <div class="flex flex-column gap-sm">
               <p class="text-sm color-contrast-low text-capitalize">Proposed Format Overview</p>
               <h1>Proposed College Football Format</h1>
-              <p class="line-height-lg">
-                This proposed format can potentially fix many current issues plaguing College
-                Football.
-              </p>
+              <p class="line-height-lg">This proposed format can potentially fix many current issues plaguing College Football.</p>
             </div>
           </div>
 
@@ -108,7 +174,7 @@
                 <figure class="card-v15__icon-wrapper" aria-hidden="true">
                   <svg class="card-v15__icon icon" viewBox="0 0 24 24">
                     <path
-                      fill="var(--color-success)"
+                      fill="var(--color-primary)"
                       d="M8.5 20c-.398 0-.78-.158-1.061-.439l-6.353-6.354c-.39-.391-.39-1.024 0-1.414l.707-.707c.391-.391 1.024-.391 1.414 0L8.5 16.379 20.793 4.086c.391-.391 1.024-.391 1.414 0l.707.707c.391.391.391 1.024 0 1.414L9.561 19.561C9.28 19.842 8.898 20 8.5 20Z" />
                   </svg>
                 </figure>
@@ -117,29 +183,19 @@
               </div>
               <div class="card-v15__divider margin-y-sm" role="presentation"></div>
               <h4 class="text-base">Fluid Conferences</h4>
-              <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">
-                Teams move up or down after the season.
-              </p>
+              <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">Teams move up or down after the season.</p>
 
               <h4 class="text-base">Grouped Conferences</h4>
-              <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">
-                Grouped conferences for non-conference play.
-              </p>
+              <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">Grouped conferences for non-conference play.</p>
 
               <h4 class="text-base">Level of Play</h4>
-              <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">
-                Play teams of your same caliber.
-              </p>
+              <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">Play teams of your same caliber.</p>
 
               <h4 class="text-base">Financial</h4>
-              <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">
-                Earn based on your performance on the field.
-              </p>
+              <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">Earn based on your performance on the field.</p>
 
               <h4 class="text-base">Conference Playoffs</h4>
-              <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">
-                All conferences have their own playoffs.
-              </p>
+              <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">All conferences have their own playoffs.</p>
             </div>
           </div>
         </div>
@@ -147,10 +203,7 @@
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
         <div class="container max-width-adaptive-lg">
-          <p
-            class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">
-            set up
-          </p>
+          <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">set up</p>
 
           <div class="grid gap-md gap-0@md">
             <div class="col-4@md">
@@ -159,19 +212,31 @@
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <p>
-                  All of the current football conferences would be dissolved, and six new
-                  conferences would be created. Teams placed within the conferences at the start of
-                  the format would be based on the final rankings of the previous year. This would
-                  allow every school to be placed in a conference so that every school would have a
-                  conference. It would also pull in independent schools, and the conferences would
-                  be ranked.
-                </p>
+                <ul class="list list--ul">
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Creation of New Conferences:</span>
+                    <ul class="list list--ul">
+                      <li>Six new conferences would be created. Each with 20 teams.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Inclusion of All Schools:</span>
+                    <ul class="list list--ul">
+                      <li>Every school would be placed in a conference, ensuring no school is left out.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Divisions:</span>
+                    <ul class="list list--ul">
+                      <li>Every conference would be split into two divisions.</li>
+                    </ul>
+                  </li>
+                </ul>
 
                 <p>Conferences in Order:</p>
 
                 <ol class="list list--ol">
-                  <li>Premier</li>
+                  <li>Premier Elite</li>
                   <li>Elite</li>
                   <li>Champion</li>
                   <li>Contender</li>
@@ -184,48 +249,15 @@
         </div>
       </section>
 
-      <div class="grid gap-sm padding-y-xl">
-        <div class="card-v14 items-center col-6@xs col-4@lg">
-          <figure class="card-v14__icon-wrapper" aria-hidden="true">
-            <svg class="card-v14__icon icon" viewBox="0 0 24 24">
-              <path d="M14.5 23.5h-3V4.321L6.766 8.108 4.892 5.766 11.474.5H14.5v23z" />
-            </svg>
-          </figure>
-
-          <h3 class="text-2xl">League</h3>
-        </div>
-
-        <div class="card-v14 items-center col-6@xs col-4@lg">
-          <figure class="card-v14__icon-wrapper" aria-hidden="true">
-            <svg class="card-v14__icon icon" viewBox="0 0 24 24">
-              <path
-                d="M12 24c-4.424 0-9-3.74-9-10C3 6.1 8.3 1 16.5 1H18v3h-1.5c-5.379 0-8.985 2.5-10.118 6.842A9.8 9.8 0 0 1 12 9a7.679 7.679 0 0 1 8 7.5 7.679 7.679 0 0 1-8 7.5Zm-5.771-7.957A6.082 6.082 0 0 0 12 21c2.851 0 5-1.935 5-4.5S14.851 12 12 12c-3.745 0-5.4 2.446-5.771 4.043Z" />
-            </svg>
-          </figure>
-
-          <h3 class="text-2xl">Conferences</h3>
-        </div>
-
-        <div class="card-v14 items-center col-6@xs col-4@lg">
-          <figure class="card-v14__icon-wrapper" aria-hidden="true">
-            <svg class="card-v14__icon icon" viewBox="0 0 24 24">
-              <path
-                d="M19.5 23.5h-15v-3.3l.667-.445C9.549 16.828 16.5 10.78 16.5 7c0-2.654-1.682-4-5-4a9.108 9.108 0 0 0-4.167 1.248l-1.249.832L4.42 2.584l1.247-.832A11.963 11.963 0 0 1 11.5 0c4.935 0 8 2.683 8 7 0 5-6.5 10.662-10.232 13.5H19.5ZM6 21Z" />
-            </svg>
-          </figure>
-
-          <h3 class="text-2xl">Divisions</h3>
-
-          <p></p>
-        </div>
+      <div class="pading-y-xl">
+        <figure class="container max-width-lg margin-bottom-lg">
+          <img class="block width-100% radius-lg" src="img/svg/set-up.svg" alt="Conference set up" />
+        </figure>
       </div>
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
         <div class="container max-width-adaptive-lg">
-          <p
-            class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">
-            Divisions
-          </p>
+          <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">Divisions</p>
 
           <div class="grid gap-md gap-0@md">
             <div class="col-4@md">
@@ -234,59 +266,102 @@
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <p>
-                  Each conference would be divided into two divisions of ten teams, based on the
-                  school's geographical location, moving west to east. Below is how the Premier
-                  Conference would be grouped based on the 2023 final rankings.
-                </p>
+                <ul class="list list--ul">
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Conference Structure:</span>
+                    <ul class="list list--ul">
+                      <li>Each conference is divided into two divisions of ten teams.</li>
+                      <li>Divisions are based on geographical location, West to East.</li>
+                    </ul>
+                  </li>
+
+                  <p class="margin-top-md">Below is how the Premier Elite Conference would have been set up based on the 2023 final rankings.</p>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="grid gap-sm padding-y-xl">
-        <div class="card-v14 col-6">
-          <h3 class="text-xl">West Division</h3>
+      <div class="padding-y-xl">
+        <div class="bg-light radius-lg">
+          <div class="grid">
+            <div class="flex items-center col-6@md">
+              <div class="padding-md padding-x-lg@lg padding-y-xl@lg">
+                <div class="flex items-center gap-sm">
+                  <svg class="icon icon--md color-primary" viewBox="0 0 48 48">
+                    <path fill="currentColor" d="M44 22H26V4c0-.552-.448-1-1-1h-2c-.552 0-1 .448-1 1v18H4c-.552 0-1 .448-1 1v2c0 .552.448 1 1 1h18v18c0 .552.448 1 1 1h2c.552 0 1-.448 1-1V26h18c.552 0 1-.448 1-1v-2c0-.552-.448-1-1-1Z" />
+                  </svg>
+                  <h2 class="text-xl">West Division</h2>
+                </div>
 
-          <ul class="list list--ul margin-top-lg">
-            <li>Washington</li>
-            <li>Oregon</li>
-            <li>Arizona</li>
-            <li>Oklahoma</li>
-            <li>Texas</li>
-            <li>Oklahoma State</li>
-            <li>Kansas State</li>
-            <li>Missouri</li>
-            <li>Ole Miss</li>
-            <li>LSU</li>
-          </ul>
+                <div class="flex gap-md">
+                  <ul class="list list--ul margin-top-lg font-bold text-md">
+                    <li>Washington</li>
+                    <li>Oregon</li>
+                    <li>Arizona</li>
+                    <li>Oklahoma</li>
+                    <li>Texas</li>
+                  </ul>
+
+                  <ul class="list list--ul margin-top-lg font-bold text-md">
+                    <li>Oklahoma State</li>
+                    <li>Kansas State</li>
+                    <li>Missouri</li>
+                    <li>Ole Miss</li>
+                    <li>LSU</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <figure class="col-6@md flex items-center padding-y-md">
+              <img class="width-100% height-auto object-cover" data-img-light src="img/svg/west.svg" alt="West Division Map" />
+            </figure>
+          </div>
         </div>
 
-        <div class="card-v14 col-6">
-          <h3 class="text-xl">East Division</h3>
+        <div class="bg-light margin-top-lg radius-lg">
+          <div class="grid">
+            <div class="flex items-center col-6@md">
+              <div class="padding-md padding-x-lg@lg padding-y-xl@lg">
+                <div class="flex items-center gap-sm">
+                  <svg class="icon icon--md color-primary" viewBox="0 0 48 48">
+                    <path fill="currentColor" d="M44 22H26V4c0-.552-.448-1-1-1h-2c-.552 0-1 .448-1 1v18H4c-.552 0-1 .448-1 1v2c0 .552.448 1 1 1h18v18c0 .552.448 1 1 1h2c.552 0 1-.448 1-1V26h18c.552 0 1-.448 1-1v-2c0-.552-.448-1-1-1Z" />
+                  </svg>
+                  <h2 class="text-xl">East Division</h2>
+                </div>
 
-          <ul class="list list--ul margin-top-lg">
-            <li>Alabama</li>
-            <li>Louisville</li>
-            <li>Notre Dame</li>
-            <li>Michigan</li>
-            <li>Ohio State</li>
-            <li>Clemson</li>
-            <li>Florida State</li>
-            <li>Georgia</li>
-            <li>Penn State</li>
-            <li>Tennessee</li>
-          </ul>
+                <div class="flex gap-md">
+                  <ul class="list list--ul margin-top-lg font-bold text-md">
+                    <li>Alabama</li>
+                    <li>Louisville</li>
+                    <li>Notre Dame</li>
+                    <li>Michigan</li>
+                    <li>Ohio State</li>
+                  </ul>
+
+                  <ul class="list list--ul margin-top-lg font-bold text-md">
+                    <li>Clemson</li>
+                    <li>Florida State</li>
+                    <li>Georgia</li>
+                    <li>Penn State</li>
+                    <li>Tennessee</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <figure class="col-6@md flex items-center padding-y-md">
+              <img class="width-100% height-auto object-cover" data-img-light src="img/svg/east.svg" alt="East Division Map" />
+            </figure>
+          </div>
         </div>
       </div>
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
         <div class="container max-width-adaptive-lg">
-          <p
-            class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">
-            Grouping
-          </p>
+          <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">Grouping</p>
 
           <div class="grid gap-md gap-0@md">
             <div class="col-4@md">
@@ -295,60 +370,68 @@
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <p>
-                  Each conference would also be grouped with another conference. This grouping of
-                  conferences will help in non-conference play.
-                </p>
+                <ul class="list list--ul">
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Conference Pairing:</span>
+                    <ul class="list list--ul">
+                      <li>Each conference would be grouped with another conference.</li>
+                      <li>This pairing is designed to facilitate non-conference play.</li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="grid gap-sm padding-y-xl">
-        <div class="card-v14 items-center col-6@xs col-4@lg">
-          <h3 class="text-xl">Premier / Elite</h3>
-        </div>
-
-        <div class="card-v14 items-center col-6@xs col-4@lg">
-          <h3 class="text-xl">Champion / Contender</h3>
-        </div>
-
-        <div class="card-v14 items-center col-6@xs col-4@lg">
-          <h3 class="text-xl">Competitor / Rookie</h3>
-
-          <p></p>
-        </div>
+      <div class="pading-y-xl">
+        <figure class="container max-width-lg margin-bottom-lg">
+          <img class="block width-100% radius-lg" src="img/svg/grouped-conf.svg" alt="Conference grouping" />
+        </figure>
       </div>
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
         <div class="container max-width-adaptive-lg">
-          <p
-            class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">
-            Scheduling
-          </p>
+          <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">Scheduling</p>
 
           <div class="grid gap-md gap-0@md">
             <div class="col-4@md">
-              <h2 class="text-capitalize text-2xl">
-                Scheduling of Conference and non-Conference games
-              </h2>
+              <h2 class="text-capitalize text-2xl">Scheduling of Conference and non-Conference games</h2>
             </div>
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <p>
-                  Each team within a conference division will play each other during the season,
-                  providing nine games. They will also have to play one team from the opposite
-                  division within the conference and two non-conference games from the conference
-                  that you're grouped with. This will simplify team scheduling, and weak schedules
-                  will be eliminated.
-                </p>
+                <ul class="list list--ul">
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Intra-Division Games:</span>
+                    <ul class="list list--ul">
+                      <li>Each team plays all within their division, totaling nine games.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Inter-Division Games:</span>
+                    <ul class="list list--ul">
+                      <li>Each team plays one game against a team from the opposite division within the conference.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Non-Conference Games:</span>
+                    <ul class="list list--ul">
+                      <li>Each team plays two non-conference games against teams from the paired conference.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Benefits:</span>
+                    <ul class="list list--ul">
+                      <li>Simplifies team scheduling.</li>
+                      <li>Eliminates weak schedules.</li>
+                      <li>Provides bigger matchups with larger viewership.</li>
+                    </ul>
+                  </li>
+                </ul>
 
-                <p>
-                  Below is how the Premier and Elite Conferences schedules would be set up. All
-                  conferences would follow the same scheduling with their grouped conference.
-                </p>
+                <p>Below is how the Premier Elite and Elite Conferences schedules would be set up. All conferences would follow the same scheduling with their grouped conference.</p>
               </div>
             </div>
           </div>
@@ -357,7 +440,7 @@
 
       <div class="grid gap-sm padding-y-xl">
         <div class="card-v14 col-6">
-          <h3 class="text-xl">Premier Conference</h3>
+          <h3 class="text-xl">Premier Elite Conference</h3>
 
           <ul class="list list--ul margin-top-lg">
             <li>9 in conference games, in the same division</li>
@@ -372,47 +455,92 @@
           <ul class="list list--ul margin-top-lg">
             <li>9 in conference games, in the same division</li>
             <li>1 in conference game, from opposite division</li>
-            <li>2 non-conference games with Premier Conference</li>
+            <li>2 non-conference games with Premier Elite Conference</li>
           </ul>
+        </div>
+      </div>
+
+      <div class="bg-light radius-lg">
+        <div class="grid">
+          <div class="flex items-center col-6@md">
+            <div class="padding-md padding-x-lg@lg padding-y-xl@lg">
+              <div class="flex items-center gap-sm">
+                <svg class="icon icon--md color-primary" viewBox="0 0 48 48">
+                  <path fill="currentColor" d="M44 22H26V4c0-.552-.448-1-1-1h-2c-.552 0-1 .448-1 1v18H4c-.552 0-1 .448-1 1v2c0 .552.448 1 1 1h18v18c0 .552.448 1 1 1h2c.552 0 1-.448 1-1V26h18c.552 0 1-.448 1-1v-2c0-.552-.448-1-1-1Z" />
+                </svg>
+                <h2 class="text-xl">Florida State</h2>
+              </div>
+              <div class="text-component margin-top-sm">
+                <p class="color-contrast-medium">What Florida State's 2024 schedule could look like.</p>
+              </div>
+
+              <div class="flex flex-column gap-md">
+                <ul class="list list--ul margin-top-lg font-bold text-md">
+                  <li>Florida State vs. Utah*</li>
+                  <li>Florida State vs. USC*</li>
+                  <li>Florida State vs. Louisville</li>
+                  <li>Florida State vs. Tennessee</li>
+                  <li>Florida State vs. Alabama</li>
+                  <li>Florida State vs. Penn State</li>
+                  <li>Florida State vs. Georgia</li>
+                  <li>Florida State vs. Oregon*</li>
+                  <li>Florida State vs. Ohio State</li>
+                  <li>Florida State vs. Michigan</li>
+                  <li>Florida State vs. Notre Dame</li>
+                  <li>Florida State vs. Clemson</li>
+                </ul>
+
+                <p class="color-contrast-medium text-sm">
+                  * Oregon - Opp. Division <br />
+                  <span class="margin-left-xs">Utah and USC - Non-Conference</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <figure class="col-6@md flex items-center padding-y-md">
+            <img class="width-100% height-auto object-cover" data-img-light src="img/svg/fsu.svg" alt="FSU logo" />
+          </figure>
         </div>
       </div>
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
         <div class="container max-width-adaptive-lg">
-          <p
-            class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">
-            Fluid
-          </p>
+          <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">Fluid</p>
 
           <div class="grid gap-md gap-0@md">
             <div class="col-4@md">
-              <h2 class="text-capitalize text-2xl">
-                Fluid Conferences giving opportunity to all programs
-              </h2>
+              <h2 class="text-capitalize text-2xl">Fluid Conferences giving opportunity to all programs</h2>
             </div>
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <p>
-                  At the end of the year, the bottom four teams of each conference will move to the
-                  conference below their current, and the top four will move up. This move will be
-                  reflected in next year's play.
-                </p>
-
-                <p>
-                  Having fluid conferences provides a way for all schools to benefit based on their
-                  performance on the field. If you play well, you move up; if you don't, you move
-                  down. This style of fluid conferences will create massive viewership as the best
-                  teams play each other weekly. This will also eliminate weak schedules as teams
-                  play others that match their level.
-                </p>
-
-                <p>
-                  This format will also prevent teams in lesser conferences from going undefeated,
-                  given a big bowl game, just to be crushed by a superior opponent. But, it will
-                  also allow teams not considered the blue-bloods of college football to move up as
-                  they play well on the field.
-                </p>
+                <ul class="list list--ul">
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Dynamic Conference System:</span>
+                    <ul class="list list--ul">
+                      <li>The bottom four teams of each conference move to the conference below.</li>
+                      <li>The top four teams move up to the conference above.</li>
+                      <li>These changes are reflected in the next year's play after end of season final rankings.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Benefits of a Dynamic Conference System:</span>
+                    <ul class="list list--ul">
+                      <li>Allows all schools to benefit based on their performance.</li>
+                      <li>Teams that play well move up; teams that don't move down.</li>
+                      <li>Increases viewership as the best teams play each other weekly.</li>
+                      <li>Eliminates weak schedules by matching teams of similar levels.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Preventing Mismatched Bowl Games:</span>
+                    <ul class="list list--ul">
+                      <li>Stops teams in lesser conferences from going undefeated and then being overwhelmed in a big bowl game.</li>
+                      <li>Allows non-elite teams to move up based on their on-field performance.</li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -434,19 +562,13 @@
                 <div class="flex-grow">
                   <div class="hiw-list__content grid gap-md items-center@md">
                     <figure class="col-6@md">
-                      <img
-                        class="block width-100%"
-                        src="/img/svg/premier.svg"
-                        alt="Image description" />
+                      <img class="block width-100%" src="img/svg/premier.svg" alt="Image description" />
                     </figure>
 
                     <div class="col-6@md">
                       <div class="text-component">
-                        <h2 class="text-lg">Premier Conference</h2>
-                        <p class="color-contrast-medium">
-                          At the end of the season, the bottom four will be moved to the Elite
-                          Conference for next years schedule.
-                        </p>
+                        <h2 class="text-lg">Premier Elite Conference</h2>
+                        <p class="color-contrast-medium">At the end of the season, the bottom four will be moved to the Elite Conference for next years schedule.</p>
                       </div>
                     </div>
                   </div>
@@ -461,20 +583,13 @@
                 <div class="flex-grow">
                   <div class="hiw-list__content grid gap-md items-center@md">
                     <figure class="col-6@md">
-                      <img
-                        class="block width-100%"
-                        src="/img/svg/elite.svg"
-                        alt="Image description" />
+                      <img class="block width-100%" src="img/svg/elite.svg" alt="Image description" />
                     </figure>
 
                     <div class="col-6@md">
                       <div class="text-component">
                         <h2 class="text-lg">Elite Conference</h2>
-                        <p class="color-contrast-medium">
-                          At the end of the season, the top four will be moved to the Premier
-                          Conference and the bottom four will be moved to the Champion Conference
-                          for next years schedule.
-                        </p>
+                        <p class="color-contrast-medium">At the end of the season, the top four will be moved to the Premier Elite Conference and the bottom four will be moved to the Champion Conference for next years schedule.</p>
                       </div>
                     </div>
                   </div>
@@ -489,20 +604,13 @@
                 <div class="flex-grow">
                   <div class="hiw-list__content grid gap-md items-center@md">
                     <figure class="col-6@md">
-                      <img
-                        class="block width-100%"
-                        src="/img/svg/champion.svg"
-                        alt="Image description" />
+                      <img class="block width-100%" src="img/svg/champion.svg" alt="Image description" />
                     </figure>
 
                     <div class="col-6@md">
                       <div class="text-component">
                         <h2 class="text-lg">Champion Conference</h2>
-                        <p class="color-contrast-medium">
-                          At the end of the season, the top four will be moved to the Elite
-                          Conference and the bottom four will be moved to the Contender Conference
-                          for next years schedule.
-                        </p>
+                        <p class="color-contrast-medium">At the end of the season, the top four will be moved to the Elite Conference and the bottom four will be moved to the Contender Conference for next years schedule.</p>
                       </div>
                     </div>
                   </div>
@@ -517,20 +625,13 @@
                 <div class="flex-grow">
                   <div class="hiw-list__content grid gap-md items-center@md">
                     <figure class="col-6@md">
-                      <img
-                        class="block width-100%"
-                        src="/img/svg/contender.svg"
-                        alt="Image description" />
+                      <img class="block width-100%" src="img/svg/contender.svg" alt="Image description" />
                     </figure>
 
                     <div class="col-6@md">
                       <div class="text-component">
                         <h2 class="text-lg">Contender Conference</h2>
-                        <p class="color-contrast-medium">
-                          At the end of the season, the top four will be moved to the Champion
-                          Conference and the bottom four will be moved to the Competitor Conference
-                          for next years schedule.
-                        </p>
+                        <p class="color-contrast-medium">At the end of the season, the top four will be moved to the Champion Conference and the bottom four will be moved to the Competitor Conference for next years schedule.</p>
                       </div>
                     </div>
                   </div>
@@ -545,20 +646,13 @@
                 <div class="flex-grow">
                   <div class="hiw-list__content grid gap-md items-center@md">
                     <figure class="col-6@md">
-                      <img
-                        class="block width-100%"
-                        src="/img/svg/competitor.svg"
-                        alt="Image description" />
+                      <img class="block width-100%" src="img/svg/competitor.svg" alt="Image description" />
                     </figure>
 
                     <div class="col-6@md">
                       <div class="text-component">
                         <h2 class="text-lg">Competitor Conference</h2>
-                        <p class="color-contrast-medium">
-                          At the end of the season, the top four will be moved to the Contender
-                          Conference and the bottom four will be moved to the Rookie Conference for
-                          next years schedule.
-                        </p>
+                        <p class="color-contrast-medium">At the end of the season, the top four will be moved to the Contender Conference and the bottom four will be moved to the Rookie Conference for next years schedule.</p>
                       </div>
                     </div>
                   </div>
@@ -573,19 +667,13 @@
                 <div class="flex-grow">
                   <div class="hiw-list__content grid gap-md items-center@md">
                     <figure class="col-6@md">
-                      <img
-                        class="block width-100%"
-                        src="/img/svg/rookie.svg"
-                        alt="Image description" />
+                      <img class="block width-100%" src="img/svg/rookie.svg" alt="Image description" />
                     </figure>
 
                     <div class="col-6@md">
                       <div class="text-component">
                         <h2 class="text-lg">Rookie Conference</h2>
-                        <p class="color-contrast-medium">
-                          At the end of the season, the top four will be moved to the Competitor
-                          Conference for next years schedule.
-                        </p>
+                        <p class="color-contrast-medium">At the end of the season, the top four will be moved to the Competitor Conference for next years schedule.</p>
                       </div>
                     </div>
                   </div>
@@ -598,40 +686,53 @@
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
         <div class="container max-width-adaptive-lg">
-          <p
-            class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">
-            Financial
-          </p>
+          <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">Financial</p>
 
           <div class="grid gap-md gap-0@md">
             <div class="col-4@md">
-              <h2 class="text-capitalize text-2xl">
-                Networks bid each other while conferences earn rewards
-              </h2>
+              <h2 class="text-capitalize text-2xl">Networks bid each other while conferences earn rewards</h2>
             </div>
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <p>
-                  With the new format, all TV networks would bid amongst themselves for conference
-                  rights each year or two, leaving schools out of it. Since conferences would be
-                  fluid, each team would move up or down in conference rankings best suited for
-                  their caliber of play and earn based on their performance. Schools would no longer
-                  use the success of other programs to reap rewards they don't deserve.
-                </p>
-                <p>
-                  The new format would allow the TV network's priority when bidding for which
-                  conferences they'll have rights to. Current conference networks and other networks
-                  like TBS and TNT could be combined with streaming services like Peacock, Amazon
-                  Prime, Hulu, and more as secondary priorities. This would foster even more
-                  watchable content, with additional companies and networks jumping in and producing
-                  more money.
-                </p>
-
-                <p>
-                  The figures below would be the default bare minimum payouts. Price tags could
-                  increase as networks bid among themselves.
-                </p>
+                <ul class="list list--ul">
+                  <li class="margin-y-sm">
+                    <span class="font-bold">TV Network Bidding:</span>
+                    <ul class="list list--ul">
+                      <li>TV networks would bid for conference rights annually or biennially.</li>
+                      <li>Schools and conferences would be excluded from this bidding process.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Fluid Conference System:</span>
+                    <ul class="list list--ul">
+                      <li>Teams move up or down in conference rankings based on their performance.</li>
+                      <li>Teams earn based on their caliber of play.</li>
+                      <li>Schools can no longer benefit from the success of other programs unfairly.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">TV Network Prioritization:</span>
+                    <ul class="list list--ul">
+                      <li>TV networks get priority in bidding for conference rights.</li>
+                      <li>Current conference networks and other networks like TBS and TNT, combined with streaming services like Peacock, Amazon Prime, Hulu, etc., act as secondary priorities.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Increased Watchable Content:</span>
+                    <ul class="list list--ul">
+                      <li>More companies and networks participating increases viewable content.</li>
+                      <li>This competition produces more revenue.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Minimum Payouts:</span>
+                    <ul class="list list--ul">
+                      <li>The figures below represent the default minimum payouts.</li>
+                      <li>Price tags could increase as networks bid amongst themselves.</li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -654,8 +755,7 @@
             <svg class="fill-current color-contrast-low icon icon--xl" viewBox="0 0 40 40">
               <path
                 d="M20 0C9 0 .1 9 .1 20S9 40 20 40c11 0 19.9-9 19.9-20S31 0 20 0zm-9.8 25.8v-1.7c-.8 1-1.8 1.6-3.2 1.6-3.3 0-6-2.7-6-6.1 0-3.3 2.7-6.1 6-6.1s6.2 2.7 6.2 6v6.1l-3 .2zm10 .1c-3.3 0-6.2-2.7-6.2-6V9.7h3v5.7c.8-1 1.8-1.6 3.2-1.6 3.3 0 6 2.7 6 6.1 0 3.3-2.7 6-6 6zm12.9-.2c-3.3 0-6-2.7-6-6.1 0-3.3 2.7-6.1 6-6.1 2.9 0 5.3 2.1 5.9 4.9h-3c-.5-1.1-1.6-1.8-2.8-1.8-1.7 0-3.1 1.4-3.1 3.1 0 1.7 1.4 3.1 3.1 3.1 1.3 0 2.4-.7 2.8-1.8h3c-.5 2.7-3 4.7-5.9 4.7z" />
-              <path
-                d="M20.1 16.6c-1.7 0-3.1 1.4-3.1 3.1 0 1.7 1.4 3.1 3.1 3.1 1.7 0 3.1-1.4 3.1-3.1-.1-1.7-1.4-3.1-3.1-3.1zM7.1 16.6C5.4 16.6 4 18 4 19.7c0 1.7 1.4 3.1 3.1 3.1 1.7 0 3.1-1.4 3.1-3.1-.1-1.7-1.5-3.1-3.1-3.1z" />
+              <path d="M20.1 16.6c-1.7 0-3.1 1.4-3.1 3.1 0 1.7 1.4 3.1 3.1 3.1 1.7 0 3.1-1.4 3.1-3.1-.1-1.7-1.4-3.1-3.1-3.1zM7.1 16.6C5.4 16.6 4 18 4 19.7c0 1.7 1.4 3.1 3.1 3.1 1.7 0 3.1-1.4 3.1-3.1-.1-1.7-1.5-3.1-3.1-3.1z" />
             </svg>
           </li>
 
@@ -685,22 +785,14 @@
               <g transform="translate(-361.2513 -478.32461)">
                 <g transform="translate(306.2855 -10891.25) scale(10.91)">
                   <path id="path120563" d="m8.6 1043.2.1-1H5.4l-.1 1h3.3z" />
-                  <path
-                    id="path120567"
-                    d="M16.1 1043.2c0-.2.1-.6 0-.7-.1-.2-.2-.3-.5-.3H9.5c-.2 0-.4.1-.5.3-.1.2-.2.6-.2.7h7.3z" />
-                  <path
-                    id="path120571"
-                    d="m12.5 1043.5-.2 2.3h1.3l.1-1.4h1.7c.4-.1.6-.5.6-.8h-3.5z" />
+                  <path id="path120567" d="M16.1 1043.2c0-.2.1-.6 0-.7-.1-.2-.2-.3-.5-.3H9.5c-.2 0-.4.1-.5.3-.1.2-.2.6-.2.7h7.3z" />
+                  <path id="path120571" d="m12.5 1043.5-.2 2.3h1.3l.1-1.4h1.7c.4-.1.6-.5.6-.8h-3.5z" />
                   <path id="path120575" d="M19.9 1043.2v-.6c0-.2-.2-.4-.5-.4h-3.1l-.1 1h3.7z" />
                   <path id="path120579" d="m18.5 1043.5-.2 2.3h1.3l.3-2.3h-1.4z" />
                   <path id="path120583" d="m16.1 1043.5-.2 2.3h1.3l.3-2.3h-1.4z" />
-                  <path
-                    id="path120587"
-                    d="M12 1043.5H8.7v.5c.1.4.5.3.5.3H11l-.1.4H8.5l-.1 1h3c.2 0 .5-.2.7-.6 0-.1.1-1 .1-1.1.1-.2 0-.4-.2-.5" />
+                  <path id="path120587" d="M12 1043.5H8.7v.5c.1.4.5.3.5.3H11l-.1.4H8.5l-.1 1h3c.2 0 .5-.2.7-.6 0-.1.1-1 .1-1.1.1-.2 0-.4-.2-.5" />
                   <path id="path120591" d="m8.5 1044.4.1-.9H5.3l-.2 2.3h3.3l.1-1h-2v-.3l2-.1z" />
-                  <path
-                    id="path120595"
-                    d="M21.3 1042.2h2.6s.6 0 .5.4l-.1 1.3s0 .4-.4.4h-1.6v.4h1.9l-.1.9h-3.2l.2-1.7s0-.5.5-.5h1.5v-.4h-1.9l.1-.8z" />
+                  <path id="path120595" d="M21.3 1042.2h2.6s.6 0 .5.4l-.1 1.3s0 .4-.4.4h-1.6v.4h1.9l-.1.9h-3.2l.2-1.7s0-.5.5-.5h1.5v-.4h-1.9l.1-.8z" />
                 </g>
               </g>
             </svg>
@@ -728,10 +820,8 @@
 
           <li class="ticker__item">
             <svg class="fill-current color-contrast-low icon icon--xl" viewBox="0 0 40 40">
-              <path
-                d="M13 14h3.9c1 0 1.5.3 2 1.1l4.1 6.3V14h16C36.5 5.9 29 0 20 0S3.5 5.9.9 14H13z" />
-              <path
-                d="M39.8 16.9h-4.4v11.8h-4V16.9h-4.6v11.8h-2.7c-1 0-1.5-.3-2-1.1L17 19.9v8.8h-3.9V16.9H8.6v11.8H4.5V16.9H.2C.1 17.9 0 19 0 20c0 11 9 20 20 20s20-9 20-20c0-1-.1-2.1-.2-3.1z" />
+              <path d="M13 14h3.9c1 0 1.5.3 2 1.1l4.1 6.3V14h16C36.5 5.9 29 0 20 0S3.5 5.9.9 14H13z" />
+              <path d="M39.8 16.9h-4.4v11.8h-4V16.9h-4.6v11.8h-2.7c-1 0-1.5-.3-2-1.1L17 19.9v8.8h-3.9V16.9H8.6v11.8H4.5V16.9H.2C.1 17.9 0 19 0 20c0 11 9 20 20 20s20-9 20-20c0-1-.1-2.1-.2-3.1z" />
             </svg>
           </li>
 
@@ -765,16 +855,10 @@
 
           <li class="ticker__item">
             <svg class="fill-current color-contrast-low icon icon--xl" viewBox="0 0 194 40">
-              <path
-                d="M.5 0v40h193V0H.5zm29 29.1c-2.5 2.5-5.5 3.8-9 3.8s-6.5-1.3-9.1-3.8c-2.5-2.5-3.8-5.5-3.8-9.1 0-3.5 1.3-6.5 3.8-9C14 8.4 17 7.2 20.5 7.2s6.5 1.3 9 3.8 3.8 5.5 3.8 9-1.3 6.6-3.8 9.1zm159.3 6.2H40.5V4.7h148.3v30.6z" />
+              <path d="M.5 0v40h193V0H.5zm29 29.1c-2.5 2.5-5.5 3.8-9 3.8s-6.5-1.3-9.1-3.8c-2.5-2.5-3.8-5.5-3.8-9.1 0-3.5 1.3-6.5 3.8-9C14 8.4 17 7.2 20.5 7.2s6.5 1.3 9 3.8 3.8 5.5 3.8 9-1.3 6.6-3.8 9.1zm159.3 6.2H40.5V4.7h148.3v30.6z" />
               <path
                 d="M27.9 14.6c-2.2-1.5-4.7-2.2-7.4-2.2s-5.2.8-7.4 2.2C11 16 9.4 17.8 8.4 20c1 2.2 2.5 4 4.6 5.4 2.2 1.5 4.7 2.2 7.4 2.2s5.2-.7 7.4-2.2c2.1-1.4 3.7-3.2 4.7-5.4-1-2.2-2.5-4-4.6-5.4zm-2.6 10.2c-1.3 1.3-2.9 2-4.8 2s-3.5-.7-4.8-2c-1.3-1.3-2-2.9-2-4.8s.7-3.5 2-4.8c1.3-1.3 2.9-2 4.8-2s3.5.7 4.8 2c1.3 1.3 2 2.9 2 4.8s-.7 3.5-2 4.8z" />
-              <path
-                stroke="#fff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="0"
-                d="M40.5 4.7h0" />
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" d="M40.5 4.7h0" />
               <path
                 d="M177.1 24.9c-1.5 0-2.5-.7-3-2.1l-3.8 1.3c.7 2.5 3.4 4 6.5 4 3.4 0 6.3-1.6 6.4-4.9 0-2.4-1.5-3.9-4.2-4.5l-3.2-.7c-1-.2-1.2-.7-1.2-1.3 0-.9.8-1.6 2.1-1.5 1.2 0 2.3.7 2.6 2l3.6-1.2c-.8-2.4-3.1-3.8-6.1-3.9-3.6 0-6.1 1.8-6.1 4.8 0 2.8 1.9 4 4.1 4.5l3.2.6c1.1.2 1.4.7 1.4 1.4 0 .9-.9 1.5-2.3 1.5zM74.3 23.4c0-2.3-1.5-3.4-3-3.5v-.1c1-.1 2.5-1.1 2.5-3.2 0-2.5-1.8-4.2-4.6-4.2h-7.9v15.4h8c3.3-.1 5-1.9 5-4.4zm-9.2-8h3.4c1 0 1.7.6 1.7 1.6s-.7 1.7-1.9 1.7H65v-3.3zm0 9.2v-3.4h3.6c1.1 0 1.8.6 1.8 1.6 0 1.1-.7 1.7-1.9 1.7h-3.5zM145.5 22.6h1.3l4.4 5h4.6l-4.6-5.3c2.4-.6 3.8-2.4 3.8-4.9 0-3.1-2.2-5.2-5.6-5.2h-7.6v15.3h3.8v-4.9zm0-7h3.3c1.4 0 2.3.7 2.4 1.9 0 1.2-.9 1.9-2.4 1.9h-3.3v-3.8zM53.5 28c2.5 0 4.4-.7 6.1-2.4l.1-.1-2.4-2.7-.1.1c-1.3 1.1-2.4 1.7-3.7 1.7-2.4 0-4.2-1.9-4.2-4.5V20c0-2.6 1.8-4.5 4.2-4.5 1.3 0 2.5.5 3.7 1.7l.1.1 2.4-2.7-.1-.1C57.9 12.7 56 12 53.5 12c-4.6 0-8.1 3.4-8.1 8s3.5 8 8.1 8zM160.9 27.7h3.8V15.6h5v-3.3H156v3.3h4.9zM101.4 24.9c-1.5 0-2.5-.7-3-2.1L94.7 24c.7 2.5 3.3 4 6.5 4 3.4 0 6.3-1.6 6.4-4.9 0-2.4-1.5-3.9-4.2-4.5l-3.2-.7c-1-.2-1.2-.7-1.2-1.3 0-.9.8-1.6 2.1-1.5 1.2 0 2.3.7 2.6 2l3.6-1.2c-.8-2.4-3.1-3.8-6.1-3.9-3.6 0-6.1 1.8-6.1 4.8 0 2.8 1.9 4 4.1 4.5l3.2.7c1.1.2 1.4.7 1.4 1.4-.1.9-1 1.5-2.4 1.5zM82.3 24.9c-1.5 0-2.5-.7-3-2.1L75.5 24c.7 2.5 3.4 4 6.5 4 3.4 0 6.3-1.6 6.4-4.9 0-2.4-1.5-3.9-4.2-4.5l-3.2-.7c-1-.2-1.2-.7-1.2-1.3 0-.9.8-1.6 2.1-1.5 1.2 0 2.3.7 2.6 2l3.6-1.2c-.8-2.5-3-3.9-6.1-3.9-3.6 0-6.1 1.8-6.1 4.8 0 2.8 1.9 4 4.1 4.5l3.2.7c1.1.2 1.4.7 1.4 1.4 0 .9-.9 1.5-2.3 1.5zM113.3 22.6h3.8c3.5 0 5.6-2.1 5.6-5.2s-2.2-5.2-5.6-5.2h-7.6v15.4h3.8v-5zm0-7h3.3c1.4 0 2.3.7 2.4 1.9 0 1.2-.9 1.9-2.4 1.9h-3.3v-3.8zM132 28c4.6 0 8.2-3.5 8.2-8s-3.6-8-8.2-8-8.2 3.6-8.2 8c0 4.5 3.6 8 8.2 8zm0-12.6c2.5 0 4.4 1.9 4.4 4.6 0 2.6-1.9 4.5-4.4 4.5-2.5 0-4.4-1.9-4.4-4.5s1.9-4.6 4.4-4.6z" />
             </svg>
@@ -784,10 +868,7 @@
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
         <div class="container max-width-adaptive-lg">
-          <p
-            class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">
-            Championships
-          </p>
+          <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">Championships</p>
 
           <div class="grid gap-md gap-0@md">
             <div class="col-4@md">
@@ -796,40 +877,54 @@
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <p>
-                  Each conference would have an 8-team playoff for the conference championship at
-                  the end of the season. The Premier Conference Playoffs would be recognized as the
-                  national championship.
-                </p>
-
-                <p>
-                  This format will create a larger-scale playoff system, six to be exact. Eight
-                  teams will battle it out for the championship and end the year in the top four to
-                  move up a conference.
-                </p>
-
-                <p>
-                  Teams that don't make their conference playoffs could be matched with teams from
-                  their grouped conferences in regular bowl games. They, too, will be playing for a
-                  win in their bowl game and not to be placed in the bottom four of the conference
-                  by the end of the season.
-                </p>
+                <ul class="list list--ul">
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Conference Playoffs:</span>
+                    <ul class="list list--ul">
+                      <li>Each conference will have an 8-team playoff for the conference championship at the end of the season.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">National Championship:</span>
+                    <ul class="list list--ul">
+                      <li>The Premier Elite Conference Playoffs will be recognized as the national championship.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Larger-Scale Playoff System:</span>
+                    <ul class="list list--ul">
+                      <li>This format will create six separate 8-team playoffs. Encompassing 48 teams.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Promotion:</span>
+                    <ul class="list list--ul">
+                      <li>Teams finishing in the top four of their conference playoffs will move up a conference for the next season.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Bowl Games for Non-Playoff Teams:</span>
+                    <ul class="list list--ul">
+                      <li>Teams not making their conference playoffs will play in regular bowl games against teams from their grouped conferences.</li>
+                      <li>These teams aim to win their bowl games to avoid being placed in the bottom four of their conference.</li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <figure class="container max-width-lg margin-bottom-lg">
-        <img class="width-100% radius-lg" src="img/svg/playoffs.svg" alt="8-team playoffs" />
-      </figure>
+      <div class="pading-y-xl">
+        <figure class="container max-width-lg margin-bottom-lg">
+          <img class="width-100% radius-lg" src="img/svg/playoffs.svg" alt="8-team playoffs" />
+        </figure>
+      </div>
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
         <div class="container max-width-adaptive-lg">
-          <p
-            class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">
-            Lawsuits
-          </p>
+          <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">Lawsuits</p>
 
           <div class="grid gap-md gap-0@md">
             <div class="col-4@md">
@@ -838,41 +933,35 @@
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <p>
-                  Through the years, lawsuits have been filed with the NCAA and conferences due to
-                  issues arising from the current format. With the new format, it would all end, as
-                  every team would have the opportunity to move up and make more money.
-                </p>
+                <ul class="list list--ul">
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Lawsuits:</span>
+                    <ul class="list list--ul">
+                      <li>Lawsuits have been filed with the NCAA and conferences over issues with the current format (media rights, realignment).</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">New Format Benefits:</span>
+                    <ul class="list list--ul">
+                      <li>The new format would resolve these multi-million dollar lawsuits.</li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="flex justify-between pading-y-xl">
-        <div class="width-100%">
-          <figure class="flex justify-center items-center container max-width-lg">
-            <img class="width-70%" src="img/svg/big-12.svg" alt="Big 12" />
-          </figure>
-        </div>
-        <div class="width-100%">
-          <figure class="flex justify-center items-center container max-width-lg">
-            <img class="width-70%" src="img/svg/pac-12.svg" alt="Pac 12" />
-          </figure>
-        </div>
-        <div class="width-100%">
-          <figure class="flex justify-center items-center container max-width-lg">
-            <img class="width-70%" src="img/svg/acc-2.svg" alt="Liberty Flames" />
-          </figure>
-        </div>
+      <div class="pading-y-xl">
+        <figure class="container max-width-lg margin-bottom-lg">
+          <img class="width-100% radius-lg" src="img/svg/lawsuits.svg" alt="Conference lawsuits" />
+        </figure>
       </div>
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
         <div class="container max-width-adaptive-lg">
-          <p
-            class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">
-            How to
-          </p>
+          <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">How to</p>
 
           <div class="grid gap-md gap-0@md">
             <div class="col-4@md">
@@ -881,15 +970,92 @@
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <p>
-                  Every team has the opportunity to move up and make more money. A program could
-                  achieve this by getting suitable coaching hires, recruiting at a high level, game
-                  planning, and in-game adjustments. A team's performance will allow them to end the
-                  season in the top four and move up to play better teams suited to their caliber.
-                </p>
+                <ul class="list list--ul">
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Program Advancement:</span>
+                    <ul class="list list--ul">
+                      <li>Every team has the opportunity to move up and make more money.</li>
+                      <li>Advance with suitable coaching hires.</li>
+                      <li>Advance with recruiting at a high level.</li>
+                      <li>Advance with game planning.</li>
+                      <li>Advance with in-game adjustments.</li>
+                    </ul>
+                  </li>
+                  <li class="margin-y-sm">
+                    <span class="font-bold">Advancement Benefits:</span>
+                    <ul class="list list--ul">
+                      <li>On-field performance will allow teams to end the season in the top four and move up to play better teams suited to their caliber.</li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="position-relative z-index-1 padding-top-xl padding-bottom-2xl">
+        <div class="container max-width-sm margin-bottom-xl">
+          <h1 class="text-center text-capitalize">Advance Through Performance</h1>
+        </div>
+
+        <div class="container max-width-adaptive-lg">
+          <ul class="grid gap-lg">
+            <li class="text-center col-6@sm col-3@md">
+              <figure class="inline-flex flex-center width-lg height-lg radius-50% bg-light margin-bottom-md">
+                <svg class="icon icon--sm color-primary" viewBox="0 0 24 24" aria-hidden="true">
+                  <g fill="currentColor">
+                    <path d="M11 0h2v5h-2zM15.536 6.05l3.536-3.535 1.414 1.414-3.535 3.536zM3.515 3.93l1.414-1.415 3.535 3.536L7.05 7.465zM24 10H8a7.062 7.062 0 1 0 6.92 6H21a1 1 0 0 0 .895-.553Z" />
+                  </g>
+                </svg>
+              </figure>
+
+              <h4 class="margin-bottom-xs">Coaches</h4>
+              <p class="color-contrast-low">Getting the best coaches for the job</p>
+            </li>
+
+            <li class="text-center col-6@sm col-3@md">
+              <figure class="inline-flex flex-center width-lg height-lg radius-50% bg-light margin-bottom-md">
+                <svg class="icon icon--sm color-primary" viewBox="0 0 24 24" aria-hidden="true">
+                  <g fill="currentColor">
+                    <path d="M22.704 1.29a2.41 2.41 0 0 0-3.408 0L17.586 3 21 6.414l1.71-1.71a2.41 2.41 0 0 0-.006-3.414zM15 3.586 2.079 16.507.725 23.275l6.768-1.354L19 10.414l1.108 1.108-6 6 1.414 1.415 7.415-7.415z" />
+                  </g>
+                </svg>
+              </figure>
+
+              <h4 class="margin-bottom-xs">Recruiting</h4>
+              <p class="color-contrast-low">Getting the best players for the program</p>
+            </li>
+
+            <li class="text-center col-6@sm col-3@md">
+              <figure class="inline-flex flex-center width-lg height-lg radius-50% bg-light margin-bottom-md">
+                <svg class="icon icon--sm color-primary" viewBox="0 0 24 24" aria-hidden="true">
+                  <g fill="currentColor">
+                    <path
+                      d="M13.179 1.6a17.048 17.048 0 0 0-7.365 4.2 16.689 16.689 0 0 0-4.232 7.32l9.3 9.289a17.137 17.137 0 0 0 7.318-4.233 16.735 16.735 0 0 0 4.2-7.351ZM15.5 13.561l-2-2-1.939 1.939 2 2-1.061 1.061-2-2-1.5 1.5L7.939 15l1.5-1.5-2-2L8.5 10.439l2 2 1.939-1.939-2-2L11.5 7.439l2 2 1.5-1.5L16.061 9l-1.5 1.5 2 2ZM1.118 15.483A13.826 13.826 0 0 0 1 17.134 6.315 6.315 0 0 0 2.386 21.6a6.311 6.311 0 0 0 4.472 1.417 13.314 13.314 0 0 0 1.678-.117ZM22.875 8.464A13.589 13.589 0 0 0 23 6.8a6.262 6.262 0 0 0-1.364-4.423c-1.181-1.179-3.487-1.587-6.11-1.252Z" />
+                  </g>
+                </svg>
+              </figure>
+
+              <h4 class="margin-bottom-xs">Planning</h4>
+              <p class="color-contrast-low">Game planning to win</p>
+            </li>
+
+            <li class="text-center col-6@sm col-3@md">
+              <figure class="inline-flex flex-center width-lg height-lg radius-50% bg-light margin-bottom-md">
+                <svg class="icon icon--sm color-primary" viewBox="0 0 24 24" aria-hidden="true">
+                  <g fill="currentColor">
+                    <circle cx="6" cy="18" r="5" />
+                    <path
+                      d="M21 10h2V2a1 1 0 0 0-1-1h-8v2h5.586l-8.293 8.293a1 1 0 1 0 1.414 1.414L21 4.414ZM2 9.414l3-3 3 3L9.414 8l-3-3 3-3L8 .586l-3 3-3-3L.586 2l3 3-3 3L2 9.414zM23.414 16 22 14.586l-3 3-3-3L14.586 16l3 3-3 3L16 23.414l3-3 3 3L23.414 22l-3-3 3-3z" />
+                  </g>
+                </svg>
+              </figure>
+
+              <h4 class="margin-bottom-xs">Adjustments</h4>
+              <p class="color-contrast-low">In-game adjustments to win</p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -898,23 +1064,71 @@
       <div class="footer-v3__container container max-width-lg">
         <div class="footer-v3__logo">
           <a href="/">
-            <svg viewBox="0 0 175 30">
-              <title>Go to homepage</title>
+            <svg viewBox="0 0 175 30" style="enable-background: new 0 0 175 30">
               <g fill="var(--color-white)">
-                <path
-                  d="M109.9 8.7c1-1.9 2.3-3.3 4.1-4.3 1.8-1 3.9-1.5 6.3-1.5 2.1 0 4 .4 5.6 1.2 1.6.8 3 1.9 4 3.3s1.7 3.1 2.1 5h-8c-.4-.8-.9-1.4-1.5-1.9-.7-.4-1.4-.7-2.3-.7-1.3 0-2.3.5-3 1.4-.7 1-1.1 2.2-1.1 3.8 0 1.6.4 2.9 1.1 3.8.7 1 1.7 1.4 3 1.4.9 0 1.6-.2 2.3-.7.7-.4 1.2-1.1 1.5-1.9h8c-.3 1.9-1 3.6-2.1 5-1 1.4-2.4 2.5-4 3.3-1.6.8-3.5 1.2-5.6 1.2-2.4 0-4.5-.5-6.3-1.5-1.8-1-3.2-2.5-4.1-4.3-1-1.9-1.4-4-1.4-6.4s.4-4.4 1.4-6.2zM151.7 3v6h-9.5v3.3h6.8V18h-6.8v9.1h-7.6V3h17.1zM173.8 16.9c.8 1.1 1.2 2.3 1.2 3.7 0 2.1-.7 3.7-2.1 4.9-1.4 1.1-3.4 1.7-6 1.7h-12.6V3h12.3c2.4 0 4.4.5 5.8 1.6 1.4 1.1 2.1 2.6 2.1 4.7 0 1.4-.4 2.6-1.1 3.6-.7 1-1.7 1.6-2.9 1.9 1.4.3 2.5 1 3.3 2.1zm-12-4.5h2.9c.7 0 1.2-.1 1.5-.4.3-.3.5-.7.5-1.3 0-.6-.2-1-.5-1.3-.3-.3-.8-.4-1.5-.4h-2.9v3.4zm5 8.3c.3-.3.5-.7.5-1.3 0-1.2-.7-1.7-2-1.7h-3.4v3.4h3.4c.6 0 1.2-.2 1.5-.4zM73.9 18.1 66.5 3.8c-.1-.3 0-.7.3-.8.3-.1.7 0 .8.3l7.3 14.3c.1.3 0 .7-.3.8-.2.1-.6 0-.7-.3z" />
-                <path
-                  d="M66.5 26.5v-23c0-.3.3-.6.6-.6s.6.3.6.6v23c0 .3-.3.6-.6.6-.4 0-.6-.3-.6-.6zM74.9 18.1l7.3-14.3c.1-.3 0-.7-.3-.8-.3-.1-.7 0-.8.3l-7.3 14.3c-.1.3 0 .7.3.8.3.1.7 0 .8-.3z" />
-                <path
-                  d="M82.3 26.5v-23c0-.3-.3-.6-.6-.6s-.6.3-.6.6v23c0 .3.3.6.6.6.4 0 .6-.3.6-.6zM38.6 26.8 31.5 3.5c-.1-.3.1-.6.4-.7.3-.1.6.1.7.4l7.1 23.4c.1.3-.1.6-.4.7-.2 0-.6-.1-.7-.5z" />
-                <path
-                  d="m39.8 26.8 7.1-23.4c.1-.3-.1-.6-.4-.7-.3-.1-.6.1-.7.4l-7.1 23.4c-.1.3.1.6.4.7.3.1.6 0 .7-.4zM55.7 3.1l7.1 23.4c.1.3-.1.6-.4.7-.3.1-.6-.1-.7-.4L54.5 3.5c-.1-.3.1-.6.4-.7.3-.2.7 0 .8.3z" />
-                <path
-                  d="m54.5 3.1-7.1 23.4c-.1.3.1.6.4.7.3.1.6-.1.7-.4l7.1-23.4c.1-.3-.1-.6-.4-.7-.2-.1-.6.1-.7.4zM29.2 15.6H17.4c-.3 0-.6-.3-.6-.6s.3-.6.6-.6h11.8c.3 0 .6.3.6.6s-.3.6-.6.6zM29.2 4.1H17.4c-.3 0-.6-.3-.6-.6s.3-.6.6-.6h11.8c.3 0 .6.3.6.6s-.3.6-.6.6zM29.2 27.1H17.4c-.3 0-.6-.3-.6-.6s.3-.6.6-.6h11.8c.3 0 .6.3.6.6s-.3.6-.6.6zM11.8 26.8 6 15.4c-.2-.3 0-.7.3-.8.3-.2.7 0 .8.3l5.8 11.4c.2.3 0 .7-.3.8-.3.1-.6 0-.8-.3z" />
-                <path
-                  d="M7 2.9H.6c-.3 0-.6.2-.6.6 0 .3.3.6.6.6H7c2.7 0 5.2 2.1 5.3 4.8.2 3-2.2 5.5-5.2 5.5H3.2c-.3 0-.6.3-.6.6s.3.6.6.6h3.9c3.7 0 6.7-3.2 6.3-7-.2-3.3-3.1-5.7-6.4-5.7zM89.271 15.083v12.1h-1.2v-12.1z" />
-                <path
-                  d="M95.1 2.9h-6.4c-.3 0-.6.3-.6.6s.3.6.6.6h6.4c2.7 0 5.2 2.1 5.3 4.8.2 3-2.2 5.5-5.2 5.5h-6.6c-.3 0-.6.3-.6.6s.3.6.6.6h6.6c3.7 0 6.7-3.2 6.3-7-.2-3.3-3.1-5.7-6.4-5.7z" />
+                <g>
+                  <path
+                    d="M120.2,9.8c0.9,0,1.6,0.3,2.3,0.7c0.6,0.5,1.1,1.1,1.5,1.9h8c-0.4-1.9-1.1-3.6-2.1-5c-1-1.4-2.4-2.5-4-3.3
+    c-1.6-0.8-3.5-1.2-5.6-1.2c-2.4,0-4.5,0.5-6.3,1.5c-1.8,1-3.1,2.4-4.1,4.3c-1,1.8-1.4,3.8-1.4,6.2c0,2.4,0.4,4.5,1.4,6.4
+    c0.9,1.8,2.3,3.3,4.1,4.3c1.8,1,3.9,1.5,6.3,1.5c2.1,0,4-0.4,5.6-1.2c1.6-0.8,3-1.9,4-3.3c1.1-1.4,1.8-3.1,2.1-5h-8
+    c-0.3,0.8-0.8,1.5-1.5,1.9c-0.7,0.5-1.4,0.7-2.3,0.7c-1.3,0-2.3-0.4-3-1.4c-0.7-0.9-1.1-2.2-1.1-3.8c0-1.6,0.4-2.8,1.1-3.8
+    C117.9,10.3,118.9,9.8,120.2,9.8z" />
+                  <polygon points="134.5,27.1 142.1,27.1 142.1,18 149,18 149,12.2 142.1,12.2 142.1,8.9 151.7,8.9 151.7,2.9 134.5,2.9 		" />
+                  <g>
+                    <path d="M29.2,25.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,25.9,29.2,25.9z" />
+                    <path d="M29.2,14.4H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,14.4,29.2,14.4z" />
+                    <path d="M29.2,2.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,2.9,29.2,2.9z" />
+                  </g>
+                  <g>
+                    <path
+                      d="M13.4,8.6C13.2,5.3,10.3,2.9,7,2.9H0.6C0.3,2.9,0,3.1,0,3.5c0,0.3,0.3,0.6,0.6,0.6H7c2.7,0,5.2,2.1,5.3,4.8
+      c0.2,3-2.2,5.5-5.2,5.5H3.2c-0.3,0-0.6,0.3-0.6,0.6c0,0.3,0.3,0.6,0.6,0.6h2.9l5.7,11.2c0.2,0.3,0.5,0.4,0.8,0.3
+      c0.3-0.1,0.5-0.5,0.3-0.8L7.4,15.6C11,15.4,13.8,12.3,13.4,8.6z" />
+                  </g>
+                  <path
+                    d="M95.1,2.9h-6.5c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h6.5c2.7,0,5.2,2.1,5.3,4.8c0.2,3-2.2,5.5-5.2,5.5h-6.6
+    c-0.3,0-0.6,0.3-0.6,0.6v11.5h0c0,0,0,0,0,0c0,0.3,0.3,0.6,0.6,0.6c0.3,0,0.6-0.3,0.6-0.6c0,0,0,0,0,0h0V15.5h6
+    c3.7,0,6.7-3.2,6.3-7C101.2,5.3,98.4,2.9,95.1,2.9z" />
+                </g>
+                <g>
+                  <path
+                    d="M173.8,16.8c0.8,1.1,1.2,2.3,1.2,3.7c0,2.1-0.7,3.8-2.1,4.9c-1.4,1.1-3.4,1.7-6,1.7h-12.7V2.9h12.3c2.5,0,4.4,0.5,5.8,1.6
+    c1.4,1.1,2.1,2.6,2.1,4.7c0,1.4-0.4,2.6-1.1,3.6c-0.7,1-1.7,1.6-3,1.9C171.8,15,173,15.7,173.8,16.8z M161.8,12.3h2.9
+    c0.7,0,1.2-0.1,1.5-0.4c0.3-0.3,0.5-0.7,0.5-1.3c0-0.6-0.2-1-0.5-1.3s-0.8-0.4-1.5-0.4h-2.9V12.3z M166.7,20.6
+    c0.3-0.3,0.5-0.7,0.5-1.3c0-1.2-0.7-1.7-2-1.7h-3.5V21h3.5C165.9,21,166.4,20.9,166.7,20.6z" />
+                </g>
+                <g>
+                  <path
+                    d="M39.4,27.1L39.4,27.1c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23C31.5,3.4,31.7,3,32,2.9v0c0.3-0.1,0.7,0.1,0.7,0.4l7,23
+    C39.9,26.6,39.7,27,39.4,27.1z" />
+                  <path
+                    d="M39,27.1L39,27.1c0.3,0.1,0.7-0.1,0.7-0.4l7-23c0.1-0.3-0.1-0.7-0.4-0.7v0c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23
+    C38.5,26.6,38.7,27,39,27.1z" />
+                </g>
+                <g>
+                  <path
+                    d="M54.9,2.9L54.9,2.9c0.3-0.1,0.7,0.1,0.7,0.4l7,23c0.1,0.3-0.1,0.7-0.4,0.7l0,0c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23
+    C54.4,3.4,54.6,3,54.9,2.9z" />
+                  <path
+                    d="M55.3,2.9L55.3,2.9c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23c-0.1,0.3,0.1,0.7,0.4,0.7h0c0.3,0.1,0.7-0.1,0.7-0.4l7-23
+    C55.7,3.4,55.6,3,55.3,2.9z" />
+                </g>
+                <g>
+                  <path
+                    d="M67.8,27.1L67.8,27.1c-0.3,0-0.6-0.3-0.6-0.6v-23c0-0.3,0.3-0.6,0.6-0.6l0,0c0.3,0,0.6,0.3,0.6,0.6v23
+    C68.4,26.8,68.2,27.1,67.8,27.1z" />
+                  <path
+                    d="M75.3,18.2L75.3,18.2c-0.3,0.2-0.7,0-0.8-0.3L67.3,3.8c-0.2-0.3,0-0.7,0.3-0.8v0c0.3-0.2,0.7,0,0.8,0.3l7.2,14.2
+    C75.7,17.7,75.6,18.1,75.3,18.2z" />
+                </g>
+                <g>
+                  <path
+                    d="M82.2,27.1L82.2,27.1c0.3,0,0.6-0.3,0.6-0.6v-23c0-0.3-0.3-0.6-0.6-0.6l0,0c-0.3,0-0.6,0.3-0.6,0.6v23
+    C81.6,26.8,81.9,27.1,82.2,27.1z" />
+                  <path
+                    d="M74.7,18.2L74.7,18.2c0.3,0.2,0.7,0,0.8-0.3l7.2-14.2c0.2-0.3,0-0.7-0.3-0.8v0c-0.3-0.2-0.7,0-0.8,0.3l-7.2,14.2
+    C74.3,17.7,74.4,18.1,74.7,18.2z" />
+                </g>
               </g>
             </svg>
           </a>
@@ -941,8 +1155,6 @@
       </div>
     </footer>
 
-    <script
-      src="js/scripts.js"
-      nonce="sha256-Bed9qzUU2IVkAAxp73fh88GAnMchALEvifOr4XcPQ/4="></script>
+    <script src="js/scripts.js" nonce="sha256-Bed9qzUU2IVkAAxp73fh88GAnMchALEvifOr4XcPQ/4="></script>
   </body>
 </html>
