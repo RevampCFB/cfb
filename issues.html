@@ -37,7 +37,7 @@
   <body data-theme="default" id="top">
     <header class="f-header js-f-header position-relative">
       <div class="f-header__mobile-content container max-width-lg">
-        <a href="#0" class="f-header__logo">
+        <a href="/" class="f-header__logo">
           <svg viewBox="0 0 175 30" style="enable-background: new 0 0 175 30">
             <g fill="var(--color-white)">
               <g>
@@ -149,7 +149,7 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
     </header>
 
     <main class="container max-width-adaptive-lg">
-      <section class="container position-relative z-index-1 padding-y-xl">
+      <section class="position-relative z-index-1 padding-y-xl">
         <div class="grid gap-lg feature-v21__items-position">
           <div class="col-8@xl col-6@md">
             <div class="flex flex-column gap-sm">
@@ -178,16 +178,16 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
               </div>
               <div class="card-v15__divider margin-y-sm" role="presentation"></div>
               <h4 class="text-base">Scheduling</h4>
-              <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">Teams scheduling weak opponents.</p>
+              <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">Teams schedule weak opponents.</p>
 
               <h4 class="text-base">Bowl Games</h4>
               <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">Inferior playing superior in bowl games.</p>
 
-              <h4 class="text-base">Opt Out</h4>
+              <h4 class="text-base">Opt-Out</h4>
               <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">Players opting out of bowl games.</p>
 
               <h4 class="text-base">Financial</h4>
-              <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">Conferences ran by network money and teams that don't contribute much to the sport earning more than those that do.</p>
+              <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">Conferences are run by network money, and teams that contribute little to the sport earn more than those that do.</p>
 
               <h4 class="text-base">Left in Dark</h4>
               <p class="color-contrast-medium line-height-lg margin-y-xs text-sm">Teams left without a solid conference.</p>
@@ -197,7 +197,7 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
       </section>
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
-        <div class="container max-width-adaptive-lg">
+        <div class="max-width-adaptive-lg">
           <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">Scheduling</p>
 
           <div class="grid gap-md gap-0@md">
@@ -207,31 +207,38 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <ul class="list list--ul">
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Weak Schedule:</span>
-                    <ul class="list list--ul">
-                      <li>Stronger teams often schedule many weak teams for easy wins.</li>
-                      <li>These games typically lack excitement.</li>
-                    </ul>
-                  </li>
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Viewership Impact:</span>
-                    <ul class="list list--ul">
-                      <li>Larger networks prefer to broadcast more exciting games to attract viewers.</li>
-                      <li>These less exciting games are often left to conference networks.</li>
-                    </ul>
-                  </li>
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">Weak Schedule:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Often play against weaker teams for easy victories.</li>
+                  <li>Games lack national excitement.</li>
                 </ul>
 
-                <p>The following schedule played out in the 2023 season. These are just some of the non-conference games and doesn't account for the continual lopsided conference play against inferior teams.</p>
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">Viewership Impact:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Major networks prefer exciting games to draw viewers.</li>
+                  <li>Less exciting games are often shown on conference networks or streaming services.</li>
+                </ul>
+
+                <p>The following schedule from the 2023 season includes only non-conference games. It doesn't account for the consistently lopsided conference play against weaker teams.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="container max-width-adaptive-lg">
+      <div class="max-width-adaptive-lg">
         <table class="table table--expanded@xs position-relative z-index-1 width-100% text-unit-em text-sm js-table" aria-label="Table Example">
           <thead class="table__header">
             <tr class="table__row">
@@ -358,7 +365,7 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
       </div>
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
-        <div class="container max-width-adaptive-lg">
+        <div class="max-width-adaptive-lg">
           <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">Bowl Games</p>
 
           <div class="grid gap-md gap-0@md">
@@ -368,27 +375,28 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <ul class="list list--ul">
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Matchup Disparity:</span>
-                    <ul class="list list--ul">
-                      <li>Inferior teams on paper are often matched against much superior teams in bowl games.</li>
-                      <li>The superior team usually wins, but upsets can happen.</li>
-                    </ul>
-                  </li>
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Reason for Matchups:</span>
-                    <ul class="list list--ul">
-                      <li>Inferior teams may come from less competitive conferences.</li>
-                      <li>Superior teams often face tougher competition throughout the season.</li>
-                    </ul>
-                  </li>
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Factors Influencing Outcomes:</span>
-                    <ul class="list list--ul">
-                      <li>Opt-outs and lack of enthusiasm from superior teams can sometimes lead to the inferior team winning.</li>
-                    </ul>
-                  </li>
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">Matchup Disparity:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Inferior teams, on paper, are often matched against much superior teams in bowl games.</li>
+                  <li>The superior team usually wins, but the unlikely upset can happen.</li>
+                </ul>
+
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">Reason for Matchups:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Inferior teams may come from running the table in a less competitive conference.</li>
+                  <li>Superior teams often face tougher competition throughout the season.</li>
                 </ul>
               </div>
             </div>
@@ -397,14 +405,14 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
       </section>
 
       <div class="pading-y-xl">
-        <figure class="container max-width-lg margin-bottom-lg">
+        <figure class="max-width-lg margin-bottom-lg">
           <img class="block width-100% radius-lg" src="img/svg/vrbo-fiesta-bowl.svg" alt="2023 vrbo Fiesta Bowl" />
         </figure>
       </div>
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
-        <div class="container max-width-adaptive-lg">
-          <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">Opt Outs</p>
+        <div class="max-width-adaptive-lg">
+          <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">Opt-Outs</p>
 
           <div class="grid gap-md gap-0@md">
             <div class="col-4@md">
@@ -413,19 +421,26 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <ul class="list list--ul">
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Investment in Athletes:</span>
-                    <ul class="list list--ul">
-                      <li>Fans and colleges invest in student-athletes who are now paid professionals and opt-out during bowl season.</li>
-                    </ul>
-                  </li>
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Opt-Outs Impact:</span>
-                    <ul class="list list--ul">
-                      <li>Many athletes opt out of bowl games, which can negatively affect their teams during bowl games.</li>
-                    </ul>
-                  </li>
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">Investment in Athletes:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Fans and universities invest in student-athletes who are now paid professionals but opt out during bowl season.</li>
+                </ul>
+
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">Opt-Outs Impact:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Many athletes opt out of bowl games, negatively affecting their teams.</li>
                 </ul>
               </div>
             </div>
@@ -433,14 +448,18 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
         </div>
       </section>
 
-      <div class="pading-y-xl">
-        <figure class="container max-width-lg margin-bottom-lg">
-          <img class="block width-100% radius-lg" src="img/svg/opt-out.svg" alt="Bowl game opt-outs" />
-        </figure>
+      <div>
+        <h2 class="margin-bottom-sm text-center">Player Opt-Outs</h2>
+
+        <div class="chart chart--column" id="column-chart-opt-out">
+          <div class="chart__area js-chart__area">
+            <!-- chart will be created here using JavaScript-->
+          </div>
+        </div>
       </div>
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
-        <div class="container max-width-adaptive-lg">
+        <div class="max-width-adaptive-lg">
           <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">Financial</p>
 
           <div class="grid gap-md gap-0@md">
@@ -450,19 +469,27 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <ul class="list list--ul">
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Unfair Distribution:</span>
-                    <ul class="list list--ul">
-                      <li>The current system allows certain teams to benefit from others' success without significantly contributing to the conference's value, results in an unfair distribution of financial resources.</li>
-                    </ul>
-                  </li>
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Media Money Influence:</span>
-                    <ul class="list list--ul">
-                      <li>Teams outside the two big conferences, B1G and SEC, have slim chances of benefiting from media money.</li>
-                    </ul>
-                  </li>
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">Unfair Distribution:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Some teams benefit from others' success without significantly contributing to the conference's value.</li>
+                </ul>
+
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">Media Money Influence:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Teams outside the two big conferences, B1G and SEC, have lower chances of benefiting from big media money.</li>
+                  <li>Recently, media money has influenced realignment.</li>
                 </ul>
               </div>
             </div>
@@ -481,7 +508,7 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
       </div>
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
-        <div class="container max-width-adaptive-lg">
+        <div class="max-width-adaptive-lg">
           <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">Left Out</p>
 
           <div class="grid gap-md gap-0@md">
@@ -491,31 +518,48 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <ul class="list list--ul">
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Conference Realignment Impact:</span>
-                    <ul class="list list--ul">
-                      <li>Realignment can leave teams without a conference.</li>
-                    </ul>
-                  </li>
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Teams Affected:</span>
-                    <ul class="list list--ul">
-                      <li>Washington St, Oregon St, Cal, and Stanford were at risk of being left without a conference.</li>
-                    </ul>
-                  </li>
-                  <li class="margin-y-sm">
-                    <span class="font-bold">ACC Intervention:</span>
-                    <ul class="list list--ul">
-                      <li>The ACC added Cal and Stanford in a desperate attempt to save itself.</li>
-                    </ul>
-                  </li>
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Remaining Teams:</span>
-                    <ul class="list list--ul">
-                      <li>Washington St and Oregon St were left without a Power 4 conference and forced to merge with a lesser conference.</li>
-                    </ul>
-                  </li>
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">Conference Realignment Impact:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Realignment can leave teams without a conference.</li>
+                </ul>
+
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">Teams Affected:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Washington St, Oregon St, Cal, and Stanford were at risk of being left without a major conference when the Pac-12 collapsed.</li>
+                </ul>
+
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">ACC Intervention:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>The ACC added Cal and Stanford in a desperate attempt to save itself.</li>
+                </ul>
+
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">Remaining Teams:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Washington St and Oregon St were left without a major conference and forced to merge with a lesser conference.</li>
                 </ul>
               </div>
             </div>
@@ -524,13 +568,13 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
       </section>
 
       <div class="pading-y-xl">
-        <figure class="container max-width-lg margin-bottom-lg">
+        <figure class="max-width-lg margin-bottom-lg">
           <img class="block width-100% radius-lg" src="img/svg/no-conf.svg" alt="Oregon St and Washinton St left with no conference" />
         </figure>
       </div>
 
       <section class="feature-v2 position-relative z-index-1 padding-y-xl">
-        <div class="container max-width-adaptive-lg">
+        <div class="max-width-adaptive-lg">
           <p class="feature-v2__label text-sm color-contrast-low text-capitalize margin-bottom-md margin-bottom-lg@md">Conference Cage</p>
 
           <div class="grid gap-md gap-0@md">
@@ -540,39 +584,51 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
 
             <div class="col-7@md offset-1@md">
               <div class="text-component text-component--relaxed">
-                <ul class="list list--ul">
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Discontent in Conferences:</span>
-                    <ul class="list list--ul">
-                      <li>Realignment can leave teams without a conference.</li>
-                    </ul>
-                  </li>
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Teams Affected:</span>
-                    <ul class="list list--ul">
-                      <li>Not all teams in each conference want to stay there.</li>
-                      <li>Every team in the ACC wants to be elsewhere due to dissatisfaction with their media rights deal.</li>
-                    </ul>
-                  </li>
-                  <li class="margin-y-sm">
-                    <span class="font-bold">ACC Issues:</span>
-                    <ul class="list list--ul">
-                      <li>Dissatisfaction has led to lawsuits, creating turmoil within the ACC.</li>
-                    </ul>
-                  </li>
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Pac-12 Collapse:</span>
-                    <ul class="list list--ul">
-                      <li>The Pac-12 became disorganized and its members were unhappy with its leadership.</li>
-                      <li>Leadership failed to provide an adequate media rights deal.</li>
-                    </ul>
-                  </li>
-                  <li class="margin-y-sm">
-                    <span class="font-bold">Contractual Obligations:</span>
-                    <ul class="list list--ul">
-                      <li>Contracts force teams to stay in their conference even if leadership is inadequate.</li>
-                    </ul>
-                  </li>
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">Discontent in Conferences:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Not all teams in each conference want to stay there.</li>
+                  <li>Many teams and fans notice the failed leadership of their conference.</li>
+                </ul>
+
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">ACC Issues:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Every team in the ACC wants to be elsewhere due to dissatisfaction with their media rights deal.</li>
+                  <li>Filed lawsuits have created turmoil within the ACC.</li>
+                </ul>
+
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">Pac-12 Collapse:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Pac-12 became disorganized, and its members were unhappy with its leadership.</li>
+                  <li>Leadership failed to provide an adequate media rights deal.</li>
+                </ul>
+
+                <div class="flex items-center gap-sm margin-top-md">
+                  <svg class="color-primary icon icon--sm" viewport="0 0 24 24">
+                    <path fill="currentColor" d="M12.743 1.331A1 1 0 0 0 12 1H3a1 1 0 0 0-.743 1.669L10.654 12l-8.4 9.331A1 1 0 0 0 3 23h9a1 1 0 0 0 .743-.331l9-10a1 1 0 0 0 0-1.338Z" />
+                  </svg>
+                  <span class="font-bold">Contractual Obligations:</span>
+                </div>
+
+                <ul class="list list--ul margin-left-lg">
+                  <li>Contracts force teams to stay in their conference even if leadership is inadequate.</li>
                 </ul>
               </div>
             </div>
@@ -581,15 +637,23 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
       </section>
 
       <div class="pading-y-xl">
-        <figure class="container max-width-lg margin-bottom-lg">
+        <figure class="max-width-lg margin-bottom-lg">
           <img class="block width-100% radius-lg" src="img/svg/failed-leadership.svg" alt="Stuck in conference with failed leadership" />
         </figure>
       </div>
     </main>
 
-    <footer class="footer-v3 bg-black padding-y-lg">
-      <div class="footer-v3__container container max-width-lg">
-        <div class="footer-v3__logo">
+    <footer class="footer-v4 bg-black padding-y-lg">
+      <div class="container max-width-lg">
+        <nav class="footer-v4__nav">
+          <ul class="footer-v4__nav-list">
+            <li class="footer-v4__nav-item"><a href="/issues.html">Issues</a></li>
+            <li class="footer-v4__nav-item"><a href="/proposal.html">Proposal</a></li>
+            <li class="footer-v4__nav-item"><a href="/faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-v4__logo">
           <a href="/">
             <svg viewBox="0 0 175 30" style="enable-background: new 0 0 175 30">
               <g fill="var(--color-white)">
@@ -661,15 +725,9 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
           </a>
         </div>
 
-        <nav class="footer-v3__nav">
-          <ul class="footer-v3__nav-list">
-            <li class="footer-v3__nav-item">
-              <a href="#top" class="js-smooth-scroll" data-duration="300">Back To Top</a>
-            </li>
-          </ul>
-        </nav>
+        <p class="footer-v4__print">&copy; 2024. All rights reserved.</p>
 
-        <div class="footer-v3__socials">
+        <div class="footer-v4__socials">
           <a href="https://x.com/RevampCFB" target="_blank" rel="noopener noreferrer">
             <svg class="icon" viewBox="0 0 16 16">
               <g fill="var(--color-white)">
@@ -681,6 +739,12 @@ C74.3,17.7,74.4,18.1,74.7,18.2z" />
         </div>
       </div>
     </footer>
+
+    <a class="back-to-top js-back-to-top" href="#top" data-offset="100">
+      <svg class="icon" viewBox="0 0 20 20">
+        <polyline points="2 13 10 5 18 13" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+      </svg>
+    </a>
 
     <script src="js/scripts.js" nonce="sha256-Bed9qzUU2IVkAAxp73fh88GAnMchALEvifOr4XcPQ/4="></script>
   </body>

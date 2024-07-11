@@ -1,387 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'sha256-Bed9qzUU2IVkAAxp73fh88GAnMchALEvifOr4XcPQ/4='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:;" />
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload" />
-    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <meta name="referrer" content="no-referrer" />
-    <meta http-equiv="Expect-CT" content="max-age=86400, enforce" />
-    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
 
-    <title>Revamp CFB</title>
-    <meta
-      name="description"
-      itemprop="description"
-      content="Changing the NCAA College Football to a new and improved format that provides
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' 'sha256-Bed9qzUU2IVkAAxp73fh88GAnMchALEvifOr4XcPQ/4='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:;" />
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="no-referrer" />
+  <meta http-equiv="Expect-CT" content="max-age=86400, enforce" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+
+  <title>Revamp CFB</title>
+  <meta name="description" itemprop="description" content="Changing the NCAA College Football to a new and improved format that provides
     a chance for all teams to succeed and resolves current format issues." />
-    <meta name="keywords" itemprop="keywords" content="Revamp CFB, CFB, College Football, College, NCAA, NCAA football, NCAA College Football" />
+  <meta name="keywords" itemprop="keywords"
+    content="Revamp CFB, CFB, College Football, College, NCAA, NCAA football, NCAA College Football" />
 
-    <link rel="canonical" href="https://revampcfb.com/" />
-    <link rel="icon" type="image/svg+xml" href="img/svg/revamp-cfb-logo-favicon.svg" />
+  <link rel="canonical" href="https://revampcfb.com/" />
+  <link rel="icon" type="image/svg+xml" href="img/svg/revamp-cfb-logo-favicon.svg" />
 
-    <meta property="og:url" content="https://revampcfb.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Revamp CFB" />
-    <meta property="og:description" content="Learn about some current college football issues and how they could be resolved through a new format." />
-    <meta property="og:image" content="img/jpg/revamp-cfb-social.jpg" />
-    <meta property="og:site_name" content="Revamp CFB" />
+  <meta property="og:url" content="https://revampcfb.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Revamp CFB" />
+  <meta property="og:description"
+    content="Learn about some current college football issues and how they could be resolved through a new format." />
+  <meta property="og:image" content="img/jpg/revamp-cfb-social.jpg" />
+  <meta property="og:site_name" content="Revamp CFB" />
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-  <body data-theme="default" id="top">
-    <header class="f-header js-f-header position-relative">
-      <div class="f-header__mobile-content container max-width-lg">
-        <a href="#0" class="f-header__logo">
-          <svg viewBox="0 0 175 30">
-            <title>Go to homepage</title>
-            <g fill="var(--color-white)">
-              <path
-                d="M109.9 8.6c1-1.9 2.3-3.3 4.1-4.3 1.8-1 3.9-1.5 6.3-1.5 2.1 0 4 .4 5.6 1.2 1.6.8 3 1.9 4 3.3s1.7 3.1 2.1 5h-8c-.4-.8-.9-1.4-1.5-1.9-.7-.4-1.4-.7-2.3-.7-1.3 0-2.3.5-3 1.4-.7 1-1.1 2.2-1.1 3.8 0 1.6.4 2.9 1.1 3.8.7 1 1.7 1.4 3 1.4.9 0 1.6-.2 2.3-.7.7-.4 1.2-1.1 1.5-1.9h8c-.3 1.9-1 3.6-2.1 5-1 1.4-2.4 2.5-4 3.3-1.6.8-3.5 1.2-5.6 1.2-2.4 0-4.5-.5-6.3-1.5-1.8-1-3.2-2.5-4.1-4.3-1-1.9-1.4-4-1.4-6.4s.4-4.3 1.4-6.2zM151.7 3v6h-9.5v3.3h6.8V18h-6.8v9.1h-7.6V3h17.1zM173.8 16.8c.8 1.1 1.2 2.3 1.2 3.7 0 2.1-.7 3.7-2.1 4.9-1.4 1.1-3.4 1.7-6 1.7h-12.6V3h12.3c2.4 0 4.4.5 5.8 1.6 1.4 1.1 2.1 2.6 2.1 4.7 0 1.4-.4 2.6-1.1 3.6-.7 1-1.7 1.6-2.9 1.9 1.4.3 2.5 1 3.3 2zm-12-4.4h2.9c.7 0 1.2-.1 1.5-.4.3-.3.5-.7.5-1.3 0-.6-.2-1-.5-1.3-.3-.3-.8-.4-1.5-.4h-2.9v3.4zm5 8.2c.3-.3.5-.7.5-1.3 0-1.2-.7-1.7-2-1.7h-3.4V21h3.4c.6 0 1.2-.1 1.5-.4zM12.8 26.1 7.4 15.5c1-.1 2-.4 2.8-.9.8-.4 1.5-1.1 2-2 .5-.9.7-2 .7-3.4 0-1.6-.3-2.9-.9-3.8-.6-.9-1.5-1.6-2.5-2-1-.4-2.2-.6-3.4-.6H.6c-.3 0-.6.3-.6.6 0 .4.3.6.6.6h5.5c1.7 0 3 .4 4.1 1.2 1 .8 1.6 2.1 1.6 3.9 0 1.8-.5 3.2-1.6 4-1 .8-2.4 1.2-4.1 1.2H3.2c-.3 0-.6.3-.6.6s.3.6.6.6h2.9l5.3 10.3c.1.2.2.5.4.8.2.3.3.4.6.4.1 0 .2 0 .3-.1.1-.1.2-.1.2-.2.1-.1.1-.2.1-.3v-.2c-.1 0-.1 0-.2-.1zM16.9 14.9c0 .3.3.6.6.6h11.8c.2 0 .3-.1.4-.2.1-.1.1-.2.1-.4s0-.3-.1-.4c-.1-.1-.2-.2-.4-.2H17.4c-.3 0-.5.3-.5.6zM16.9 26.5c0 .3.3.6.6.6h11.8c.2 0 .3-.1.4-.2.1-.1.1-.2.1-.4s0-.3-.1-.4c-.1-.1-.2-.2-.4-.2H17.4c-.3 0-.5.2-.5.6zM16.9 3.4c0 .3.3.6.6.6H32c.2 0 .3-.1.4-.2.1-.1.1-.2.1-.4s0-.3-.1-.4c-.1-.1-.2-.2-.4-.2H17.4c-.3 0-.5.3-.5.6z" />
-              <path
-                d="M39.2 27.2c-.1 0-.3 0-.4-.1-.1-.1-.2-.2-.2-.3L31.4 3.6v-.2c0-.1 0-.2.1-.3 0-.1.1-.1.2-.2.1 0 .2-.1.3-.1.1 0 .3 0 .4.1.1.1.2.2.2.3l6.6 21.5 6.6-21.5c0-.2.1-.3.2-.3.1-.1.2-.1.3-.1.1 0 .2 0 .3.1.1.1.2.1.2.2.1.1.2.2.2.3v.2l-7.1 23.2c0 .2-.1.3-.2.3s-.4.1-.5.1zM62.9 26.4 55.8 3.2c0-.2-.1-.3-.2-.3-.1-.1-.2-.1-.4-.1s-.3 0-.4.1c-.1.1-.2.2-.2.4l-7.2 23.2v.2c0 .1 0 .2.1.3l.2.2c.1 0 .2.1.3.1.1 0 .3 0 .4-.1.1-.1.2-.2.2-.3l6.6-21.5 6.6 21.5c0 .2.1.3.2.3.1.1.2.1.3.1.1 0 .2 0 .3-.1.1-.1.2-.1.2-.2.1-.1.1-.2.1-.3v-.3zM67.1 27.1c-.2 0-.3 0-.4-.1-.1-.1-.2-.2-.2-.4v-23c0-.2.1-.4.2-.4.1-.1.3-.1.4-.1.2 0 .3.1.4.2.1.2.3.3.4.5.1 0 .2.1.2.2l6.4 12.6L81 4c.1-.1.1-.3.2-.4.1-.2.2-.4.4-.5.1-.2.3-.2.4-.2.2 0 .3 0 .4.1.1.1.2.2.2.4v23c0 .2-.1.3-.2.4-.1.1-.3.1-.4.1-.2 0-.3 0-.4-.1-.1-.1-.2-.2-.2-.4V5.8l-6.3 12.1c-.1.2-.2.4-.3.5-.1.1-.2.1-.3.1-.1 0-.2 0-.3-.1-.1-.1-.2-.3-.3-.5L67.7 5.8v20.7c0 .2-.1.3-.2.4-.1.1-.3.2-.4.2zM100.2 5.7c-.6-1-1.4-1.7-2.3-2.2-1-.5-2.1-.7-3.3-.7h-5.9c-.3 0-.6.3-.6.6s.3.6.6.6h5.9c1.7 0 3 .5 3.9 1.4.9.9 1.4 2.3 1.4 4.3v.4c0 1.9-.5 3.3-1.4 4.3-.9.9-2.2 1.4-3.9 1.4h-5.7c-.4 0-.8.3-.8.8v10c0 .2.1.3.2.4.1.1.3.1.4.1.2 0 .3 0 .4-.1.1-.1.2-.2.2-.4v-9.5h5.3c1.2 0 2.3-.2 3.3-.7 1-.5 1.8-1.2 2.3-2.2.6-1 .9-2.3.9-4v-.5c-.1-1.7-.3-3-.9-4z" />
-            </g>
-          </svg>
-        </a>
+<body data-theme="default" id="top">
+  <header class="f-header js-f-header position-relative">
+    <div class="f-header__mobile-content container max-width-lg">
+      <a href="#0" class="f-header__logo">
+        <svg viewBox="0 0 175 30">
+          <title>Go to homepage</title>
+          <g fill="var(--color-white)">
+            <path
+              d="M109.9 8.6c1-1.9 2.3-3.3 4.1-4.3 1.8-1 3.9-1.5 6.3-1.5 2.1 0 4 .4 5.6 1.2 1.6.8 3 1.9 4 3.3s1.7 3.1 2.1 5h-8c-.4-.8-.9-1.4-1.5-1.9-.7-.4-1.4-.7-2.3-.7-1.3 0-2.3.5-3 1.4-.7 1-1.1 2.2-1.1 3.8 0 1.6.4 2.9 1.1 3.8.7 1 1.7 1.4 3 1.4.9 0 1.6-.2 2.3-.7.7-.4 1.2-1.1 1.5-1.9h8c-.3 1.9-1 3.6-2.1 5-1 1.4-2.4 2.5-4 3.3-1.6.8-3.5 1.2-5.6 1.2-2.4 0-4.5-.5-6.3-1.5-1.8-1-3.2-2.5-4.1-4.3-1-1.9-1.4-4-1.4-6.4s.4-4.3 1.4-6.2zM151.7 3v6h-9.5v3.3h6.8V18h-6.8v9.1h-7.6V3h17.1zM173.8 16.8c.8 1.1 1.2 2.3 1.2 3.7 0 2.1-.7 3.7-2.1 4.9-1.4 1.1-3.4 1.7-6 1.7h-12.6V3h12.3c2.4 0 4.4.5 5.8 1.6 1.4 1.1 2.1 2.6 2.1 4.7 0 1.4-.4 2.6-1.1 3.6-.7 1-1.7 1.6-2.9 1.9 1.4.3 2.5 1 3.3 2zm-12-4.4h2.9c.7 0 1.2-.1 1.5-.4.3-.3.5-.7.5-1.3 0-.6-.2-1-.5-1.3-.3-.3-.8-.4-1.5-.4h-2.9v3.4zm5 8.2c.3-.3.5-.7.5-1.3 0-1.2-.7-1.7-2-1.7h-3.4V21h3.4c.6 0 1.2-.1 1.5-.4zM12.8 26.1 7.4 15.5c1-.1 2-.4 2.8-.9.8-.4 1.5-1.1 2-2 .5-.9.7-2 .7-3.4 0-1.6-.3-2.9-.9-3.8-.6-.9-1.5-1.6-2.5-2-1-.4-2.2-.6-3.4-.6H.6c-.3 0-.6.3-.6.6 0 .4.3.6.6.6h5.5c1.7 0 3 .4 4.1 1.2 1 .8 1.6 2.1 1.6 3.9 0 1.8-.5 3.2-1.6 4-1 .8-2.4 1.2-4.1 1.2H3.2c-.3 0-.6.3-.6.6s.3.6.6.6h2.9l5.3 10.3c.1.2.2.5.4.8.2.3.3.4.6.4.1 0 .2 0 .3-.1.1-.1.2-.1.2-.2.1-.1.1-.2.1-.3v-.2c-.1 0-.1 0-.2-.1zM16.9 14.9c0 .3.3.6.6.6h11.8c.2 0 .3-.1.4-.2.1-.1.1-.2.1-.4s0-.3-.1-.4c-.1-.1-.2-.2-.4-.2H17.4c-.3 0-.5.3-.5.6zM16.9 26.5c0 .3.3.6.6.6h11.8c.2 0 .3-.1.4-.2.1-.1.1-.2.1-.4s0-.3-.1-.4c-.1-.1-.2-.2-.4-.2H17.4c-.3 0-.5.2-.5.6zM16.9 3.4c0 .3.3.6.6.6H32c.2 0 .3-.1.4-.2.1-.1.1-.2.1-.4s0-.3-.1-.4c-.1-.1-.2-.2-.4-.2H17.4c-.3 0-.5.3-.5.6z" />
+            <path
+              d="M39.2 27.2c-.1 0-.3 0-.4-.1-.1-.1-.2-.2-.2-.3L31.4 3.6v-.2c0-.1 0-.2.1-.3 0-.1.1-.1.2-.2.1 0 .2-.1.3-.1.1 0 .3 0 .4.1.1.1.2.2.2.3l6.6 21.5 6.6-21.5c0-.2.1-.3.2-.3.1-.1.2-.1.3-.1.1 0 .2 0 .3.1.1.1.2.1.2.2.1.1.2.2.2.3v.2l-7.1 23.2c0 .2-.1.3-.2.3s-.4.1-.5.1zM62.9 26.4 55.8 3.2c0-.2-.1-.3-.2-.3-.1-.1-.2-.1-.4-.1s-.3 0-.4.1c-.1.1-.2.2-.2.4l-7.2 23.2v.2c0 .1 0 .2.1.3l.2.2c.1 0 .2.1.3.1.1 0 .3 0 .4-.1.1-.1.2-.2.2-.3l6.6-21.5 6.6 21.5c0 .2.1.3.2.3.1.1.2.1.3.1.1 0 .2 0 .3-.1.1-.1.2-.1.2-.2.1-.1.1-.2.1-.3v-.3zM67.1 27.1c-.2 0-.3 0-.4-.1-.1-.1-.2-.2-.2-.4v-23c0-.2.1-.4.2-.4.1-.1.3-.1.4-.1.2 0 .3.1.4.2.1.2.3.3.4.5.1 0 .2.1.2.2l6.4 12.6L81 4c.1-.1.1-.3.2-.4.1-.2.2-.4.4-.5.1-.2.3-.2.4-.2.2 0 .3 0 .4.1.1.1.2.2.2.4v23c0 .2-.1.3-.2.4-.1.1-.3.1-.4.1-.2 0-.3 0-.4-.1-.1-.1-.2-.2-.2-.4V5.8l-6.3 12.1c-.1.2-.2.4-.3.5-.1.1-.2.1-.3.1-.1 0-.2 0-.3-.1-.1-.1-.2-.3-.3-.5L67.7 5.8v20.7c0 .2-.1.3-.2.4-.1.1-.3.2-.4.2zM100.2 5.7c-.6-1-1.4-1.7-2.3-2.2-1-.5-2.1-.7-3.3-.7h-5.9c-.3 0-.6.3-.6.6s.3.6.6.6h5.9c1.7 0 3 .5 3.9 1.4.9.9 1.4 2.3 1.4 4.3v.4c0 1.9-.5 3.3-1.4 4.3-.9.9-2.2 1.4-3.9 1.4h-5.7c-.4 0-.8.3-.8.8v10c0 .2.1.3.2.4.1.1.3.1.4.1.2 0 .3 0 .4-.1.1-.1.2-.2.2-.4v-9.5h5.3c1.2 0 2.3-.2 3.3-.7 1-.5 1.8-1.2 2.3-2.2.6-1 .9-2.3.9-4v-.5c-.1-1.7-.3-3-.9-4z" />
+          </g>
+        </svg>
+      </a>
 
-        <button class="anim-menu-btn js-anim-menu-btn f-header__nav-control" aria-label="Toggle menu">
-          <i class="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden="true"></i>
-        </button>
-      </div>
+      <button class="anim-menu-btn js-anim-menu-btn f-header__nav-control" aria-label="Toggle menu">
+        <i class="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden="true"></i>
+      </button>
+    </div>
 
-      <div class="f-header__nav" role="navigation">
-        <div class="f-header__nav-grid justify-between@md container max-width-lg">
-          <div class="f-header__nav-logo-wrapper flex-grow flex-basis-0">
-            <a href="/" class="f-header__logo">
-              <svg viewBox="0 0 175 30" style="enable-background: new 0 0 175 30">
-                <g fill="var(--color-white)">
-                  <g>
-                    <path
-                      d="M120.2,9.8c0.9,0,1.6,0.3,2.3,0.7c0.6,0.5,1.1,1.1,1.5,1.9h8c-0.4-1.9-1.1-3.6-2.1-5c-1-1.4-2.4-2.5-4-3.3
+    <div class="f-header__nav" role="navigation">
+      <div class="f-header__nav-grid justify-between@md container max-width-lg">
+        <div class="f-header__nav-logo-wrapper flex-grow flex-basis-0">
+          <a href="/" class="f-header__logo">
+            <svg viewBox="0 0 175 30" style="enable-background: new 0 0 175 30">
+              <g fill="var(--color-white)">
+                <g>
+                  <path d="M120.2,9.8c0.9,0,1.6,0.3,2.3,0.7c0.6,0.5,1.1,1.1,1.5,1.9h8c-0.4-1.9-1.1-3.6-2.1-5c-1-1.4-2.4-2.5-4-3.3
 			c-1.6-0.8-3.5-1.2-5.6-1.2c-2.4,0-4.5,0.5-6.3,1.5c-1.8,1-3.1,2.4-4.1,4.3c-1,1.8-1.4,3.8-1.4,6.2c0,2.4,0.4,4.5,1.4,6.4
 			c0.9,1.8,2.3,3.3,4.1,4.3c1.8,1,3.9,1.5,6.3,1.5c2.1,0,4-0.4,5.6-1.2c1.6-0.8,3-1.9,4-3.3c1.1-1.4,1.8-3.1,2.1-5h-8
 			c-0.3,0.8-0.8,1.5-1.5,1.9c-0.7,0.5-1.4,0.7-2.3,0.7c-1.3,0-2.3-0.4-3-1.4c-0.7-0.9-1.1-2.2-1.1-3.8c0-1.6,0.4-2.8,1.1-3.8
 			C117.9,10.3,118.9,9.8,120.2,9.8z" />
-                    <polygon points="134.5,27.1 142.1,27.1 142.1,18 149,18 149,12.2 142.1,12.2 142.1,8.9 151.7,8.9 151.7,2.9 134.5,2.9 		" />
-                    <g>
-                      <path d="M29.2,25.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,25.9,29.2,25.9z" />
-                      <path d="M29.2,14.4H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,14.4,29.2,14.4z" />
-                      <path d="M29.2,2.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,2.9,29.2,2.9z" />
-                    </g>
-                    <g>
-                      <path
-                        d="M13.4,8.6C13.2,5.3,10.3,2.9,7,2.9H0.6C0.3,2.9,0,3.1,0,3.5c0,0.3,0.3,0.6,0.6,0.6H7c2.7,0,5.2,2.1,5.3,4.8
-				c0.2,3-2.2,5.5-5.2,5.5H3.2c-0.3,0-0.6,0.3-0.6,0.6c0,0.3,0.3,0.6,0.6,0.6h2.9l5.7,11.2c0.2,0.3,0.5,0.4,0.8,0.3
-				c0.3-0.1,0.5-0.5,0.3-0.8L7.4,15.6C11,15.4,13.8,12.3,13.4,8.6z" />
-                    </g>
-                    <path
-                      d="M95.1,2.9h-6.5c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h6.5c2.7,0,5.2,2.1,5.3,4.8c0.2,3-2.2,5.5-5.2,5.5h-6.6
-			c-0.3,0-0.6,0.3-0.6,0.6v11.5h0c0,0,0,0,0,0c0,0.3,0.3,0.6,0.6,0.6c0.3,0,0.6-0.3,0.6-0.6c0,0,0,0,0,0h0V15.5h6
-			c3.7,0,6.7-3.2,6.3-7C101.2,5.3,98.4,2.9,95.1,2.9z" />
-                  </g>
+                  <polygon
+                    points="134.5,27.1 142.1,27.1 142.1,18 149,18 149,12.2 142.1,12.2 142.1,8.9 151.7,8.9 151.7,2.9 134.5,2.9 		" />
                   <g>
                     <path
-                      d="M173.8,16.8c0.8,1.1,1.2,2.3,1.2,3.7c0,2.1-0.7,3.8-2.1,4.9c-1.4,1.1-3.4,1.7-6,1.7h-12.7V2.9h12.3c2.5,0,4.4,0.5,5.8,1.6
+                      d="M29.2,25.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,25.9,29.2,25.9z" />
+                    <path
+                      d="M29.2,14.4H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,14.4,29.2,14.4z" />
+                    <path
+                      d="M29.2,2.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,2.9,29.2,2.9z" />
+                  </g>
+                  <g>
+                    <path d="M13.4,8.6C13.2,5.3,10.3,2.9,7,2.9H0.6C0.3,2.9,0,3.1,0,3.5c0,0.3,0.3,0.6,0.6,0.6H7c2.7,0,5.2,2.1,5.3,4.8
+				c0.2,3-2.2,5.5-5.2,5.5H3.2c-0.3,0-0.6,0.3-0.6,0.6c0,0.3,0.3,0.6,0.6,0.6h2.9l5.7,11.2c0.2,0.3,0.5,0.4,0.8,0.3
+				c0.3-0.1,0.5-0.5,0.3-0.8L7.4,15.6C11,15.4,13.8,12.3,13.4,8.6z" />
+                  </g>
+                  <path d="M95.1,2.9h-6.5c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h6.5c2.7,0,5.2,2.1,5.3,4.8c0.2,3-2.2,5.5-5.2,5.5h-6.6
+			c-0.3,0-0.6,0.3-0.6,0.6v11.5h0c0,0,0,0,0,0c0,0.3,0.3,0.6,0.6,0.6c0.3,0,0.6-0.3,0.6-0.6c0,0,0,0,0,0h0V15.5h6
+			c3.7,0,6.7-3.2,6.3-7C101.2,5.3,98.4,2.9,95.1,2.9z" />
+                </g>
+                <g>
+                  <path d="M173.8,16.8c0.8,1.1,1.2,2.3,1.2,3.7c0,2.1-0.7,3.8-2.1,4.9c-1.4,1.1-3.4,1.7-6,1.7h-12.7V2.9h12.3c2.5,0,4.4,0.5,5.8,1.6
 			c1.4,1.1,2.1,2.6,2.1,4.7c0,1.4-0.4,2.6-1.1,3.6c-0.7,1-1.7,1.6-3,1.9C171.8,15,173,15.7,173.8,16.8z M161.8,12.3h2.9
 			c0.7,0,1.2-0.1,1.5-0.4c0.3-0.3,0.5-0.7,0.5-1.3c0-0.6-0.2-1-0.5-1.3s-0.8-0.4-1.5-0.4h-2.9V12.3z M166.7,20.6
 			c0.3-0.3,0.5-0.7,0.5-1.3c0-1.2-0.7-1.7-2-1.7h-3.5V21h3.5C165.9,21,166.4,20.9,166.7,20.6z" />
-                  </g>
-                  <g>
-                    <path
-                      d="M39.4,27.1L39.4,27.1c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23C31.5,3.4,31.7,3,32,2.9v0c0.3-0.1,0.7,0.1,0.7,0.4l7,23
+                </g>
+                <g>
+                  <path d="M39.4,27.1L39.4,27.1c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23C31.5,3.4,31.7,3,32,2.9v0c0.3-0.1,0.7,0.1,0.7,0.4l7,23
 			C39.9,26.6,39.7,27,39.4,27.1z" />
-                    <path
-                      d="M39,27.1L39,27.1c0.3,0.1,0.7-0.1,0.7-0.4l7-23c0.1-0.3-0.1-0.7-0.4-0.7v0c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23
+                  <path d="M39,27.1L39,27.1c0.3,0.1,0.7-0.1,0.7-0.4l7-23c0.1-0.3-0.1-0.7-0.4-0.7v0c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23
 			C38.5,26.6,38.7,27,39,27.1z" />
-                  </g>
-                  <g>
-                    <path
-                      d="M54.9,2.9L54.9,2.9c0.3-0.1,0.7,0.1,0.7,0.4l7,23c0.1,0.3-0.1,0.7-0.4,0.7l0,0c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23
+                </g>
+                <g>
+                  <path d="M54.9,2.9L54.9,2.9c0.3-0.1,0.7,0.1,0.7,0.4l7,23c0.1,0.3-0.1,0.7-0.4,0.7l0,0c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23
 			C54.4,3.4,54.6,3,54.9,2.9z" />
-                    <path
-                      d="M55.3,2.9L55.3,2.9c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23c-0.1,0.3,0.1,0.7,0.4,0.7h0c0.3,0.1,0.7-0.1,0.7-0.4l7-23
+                  <path d="M55.3,2.9L55.3,2.9c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23c-0.1,0.3,0.1,0.7,0.4,0.7h0c0.3,0.1,0.7-0.1,0.7-0.4l7-23
 			C55.7,3.4,55.6,3,55.3,2.9z" />
-                  </g>
-                  <g>
-                    <path
-                      d="M67.8,27.1L67.8,27.1c-0.3,0-0.6-0.3-0.6-0.6v-23c0-0.3,0.3-0.6,0.6-0.6l0,0c0.3,0,0.6,0.3,0.6,0.6v23
+                </g>
+                <g>
+                  <path d="M67.8,27.1L67.8,27.1c-0.3,0-0.6-0.3-0.6-0.6v-23c0-0.3,0.3-0.6,0.6-0.6l0,0c0.3,0,0.6,0.3,0.6,0.6v23
 			C68.4,26.8,68.2,27.1,67.8,27.1z" />
-                    <path
-                      d="M75.3,18.2L75.3,18.2c-0.3,0.2-0.7,0-0.8-0.3L67.3,3.8c-0.2-0.3,0-0.7,0.3-0.8v0c0.3-0.2,0.7,0,0.8,0.3l7.2,14.2
+                  <path d="M75.3,18.2L75.3,18.2c-0.3,0.2-0.7,0-0.8-0.3L67.3,3.8c-0.2-0.3,0-0.7,0.3-0.8v0c0.3-0.2,0.7,0,0.8,0.3l7.2,14.2
 			C75.7,17.7,75.6,18.1,75.3,18.2z" />
-                  </g>
-                  <g>
-                    <path
-                      d="M82.2,27.1L82.2,27.1c0.3,0,0.6-0.3,0.6-0.6v-23c0-0.3-0.3-0.6-0.6-0.6l0,0c-0.3,0-0.6,0.3-0.6,0.6v23
+                </g>
+                <g>
+                  <path d="M82.2,27.1L82.2,27.1c0.3,0,0.6-0.3,0.6-0.6v-23c0-0.3-0.3-0.6-0.6-0.6l0,0c-0.3,0-0.6,0.3-0.6,0.6v23
 			C81.6,26.8,81.9,27.1,82.2,27.1z" />
-                    <path
-                      d="M74.7,18.2L74.7,18.2c0.3,0.2,0.7,0,0.8-0.3l7.2-14.2c0.2-0.3,0-0.7-0.3-0.8v0c-0.3-0.2-0.7,0-0.8,0.3l-7.2,14.2
+                  <path d="M74.7,18.2L74.7,18.2c0.3,0.2,0.7,0,0.8-0.3l7.2-14.2c0.2-0.3,0-0.7-0.3-0.8v0c-0.3-0.2-0.7,0-0.8,0.3l-7.2,14.2
 			C74.3,17.7,74.4,18.1,74.7,18.2z" />
-                  </g>
                 </g>
-              </svg>
+              </g>
+            </svg>
+          </a>
+        </div>
+
+        <ul class="f-header__list flex-grow flex-basis-0 justify-center@md">
+          <li class="f-header__item"><a href="issues.html" class="f-header__link">Issues</a></li>
+          <li class="f-header__item">
+            <a href="proposal.html" class="f-header__link">Proposal</a>
+          </li>
+          <li class="f-header__item"><a href="faq.html" class="f-header__link">FAQ</a></li>
+        </ul>
+
+        <ul class="f-header__list flex-grow flex-basis-0 justify-end@md">
+          <li class="f-header__item">
+            <a href="#0" class="f-header__btn btn btn--primary color-black">Sign Petition</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="intro">
+      <div class="intro__background-image padding-y-md reveal-fx">
+        <div class="intro__content reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="500">
+          <svg viewBox="0 0 175 30" style="enable-background: new 0 0 175 30">
+            <g fill="var(--color-white)">
+              <g>
+                <path d="M120.2,9.8c0.9,0,1.6,0.3,2.3,0.7c0.6,0.5,1.1,1.1,1.5,1.9h8c-0.4-1.9-1.1-3.6-2.1-5c-1-1.4-2.4-2.5-4-3.3
+    c-1.6-0.8-3.5-1.2-5.6-1.2c-2.4,0-4.5,0.5-6.3,1.5c-1.8,1-3.1,2.4-4.1,4.3c-1,1.8-1.4,3.8-1.4,6.2c0,2.4,0.4,4.5,1.4,6.4
+    c0.9,1.8,2.3,3.3,4.1,4.3c1.8,1,3.9,1.5,6.3,1.5c2.1,0,4-0.4,5.6-1.2c1.6-0.8,3-1.9,4-3.3c1.1-1.4,1.8-3.1,2.1-5h-8
+    c-0.3,0.8-0.8,1.5-1.5,1.9c-0.7,0.5-1.4,0.7-2.3,0.7c-1.3,0-2.3-0.4-3-1.4c-0.7-0.9-1.1-2.2-1.1-3.8c0-1.6,0.4-2.8,1.1-3.8
+    C117.9,10.3,118.9,9.8,120.2,9.8z" />
+                <polygon
+                  points="134.5,27.1 142.1,27.1 142.1,18 149,18 149,12.2 142.1,12.2 142.1,8.9 151.7,8.9 151.7,2.9 134.5,2.9 		" />
+                <g>
+                  <path
+                    d="M29.2,25.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,25.9,29.2,25.9z" />
+                  <path
+                    d="M29.2,14.4H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,14.4,29.2,14.4z" />
+                  <path
+                    d="M29.2,2.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,2.9,29.2,2.9z" />
+                </g>
+                <g>
+                  <path d="M13.4,8.6C13.2,5.3,10.3,2.9,7,2.9H0.6C0.3,2.9,0,3.1,0,3.5c0,0.3,0.3,0.6,0.6,0.6H7c2.7,0,5.2,2.1,5.3,4.8
+      c0.2,3-2.2,5.5-5.2,5.5H3.2c-0.3,0-0.6,0.3-0.6,0.6c0,0.3,0.3,0.6,0.6,0.6h2.9l5.7,11.2c0.2,0.3,0.5,0.4,0.8,0.3
+      c0.3-0.1,0.5-0.5,0.3-0.8L7.4,15.6C11,15.4,13.8,12.3,13.4,8.6z" />
+                </g>
+                <path d="M95.1,2.9h-6.5c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h6.5c2.7,0,5.2,2.1,5.3,4.8c0.2,3-2.2,5.5-5.2,5.5h-6.6
+    c-0.3,0-0.6,0.3-0.6,0.6v11.5h0c0,0,0,0,0,0c0,0.3,0.3,0.6,0.6,0.6c0.3,0,0.6-0.3,0.6-0.6c0,0,0,0,0,0h0V15.5h6
+    c3.7,0,6.7-3.2,6.3-7C101.2,5.3,98.4,2.9,95.1,2.9z" />
+              </g>
+              <g>
+                <path d="M173.8,16.8c0.8,1.1,1.2,2.3,1.2,3.7c0,2.1-0.7,3.8-2.1,4.9c-1.4,1.1-3.4,1.7-6,1.7h-12.7V2.9h12.3c2.5,0,4.4,0.5,5.8,1.6
+    c1.4,1.1,2.1,2.6,2.1,4.7c0,1.4-0.4,2.6-1.1,3.6c-0.7,1-1.7,1.6-3,1.9C171.8,15,173,15.7,173.8,16.8z M161.8,12.3h2.9
+    c0.7,0,1.2-0.1,1.5-0.4c0.3-0.3,0.5-0.7,0.5-1.3c0-0.6-0.2-1-0.5-1.3s-0.8-0.4-1.5-0.4h-2.9V12.3z M166.7,20.6
+    c0.3-0.3,0.5-0.7,0.5-1.3c0-1.2-0.7-1.7-2-1.7h-3.5V21h3.5C165.9,21,166.4,20.9,166.7,20.6z" />
+              </g>
+              <g>
+                <path d="M39.4,27.1L39.4,27.1c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23C31.5,3.4,31.7,3,32,2.9v0c0.3-0.1,0.7,0.1,0.7,0.4l7,23
+    C39.9,26.6,39.7,27,39.4,27.1z" />
+                <path d="M39,27.1L39,27.1c0.3,0.1,0.7-0.1,0.7-0.4l7-23c0.1-0.3-0.1-0.7-0.4-0.7v0c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23
+    C38.5,26.6,38.7,27,39,27.1z" />
+              </g>
+              <g>
+                <path d="M54.9,2.9L54.9,2.9c0.3-0.1,0.7,0.1,0.7,0.4l7,23c0.1,0.3-0.1,0.7-0.4,0.7l0,0c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23
+    C54.4,3.4,54.6,3,54.9,2.9z" />
+                <path d="M55.3,2.9L55.3,2.9c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23c-0.1,0.3,0.1,0.7,0.4,0.7h0c0.3,0.1,0.7-0.1,0.7-0.4l7-23
+    C55.7,3.4,55.6,3,55.3,2.9z" />
+              </g>
+              <g>
+                <path d="M67.8,27.1L67.8,27.1c-0.3,0-0.6-0.3-0.6-0.6v-23c0-0.3,0.3-0.6,0.6-0.6l0,0c0.3,0,0.6,0.3,0.6,0.6v23
+    C68.4,26.8,68.2,27.1,67.8,27.1z" />
+                <path d="M75.3,18.2L75.3,18.2c-0.3,0.2-0.7,0-0.8-0.3L67.3,3.8c-0.2-0.3,0-0.7,0.3-0.8v0c0.3-0.2,0.7,0,0.8,0.3l7.2,14.2
+    C75.7,17.7,75.6,18.1,75.3,18.2z" />
+              </g>
+              <g>
+                <path d="M82.2,27.1L82.2,27.1c0.3,0,0.6-0.3,0.6-0.6v-23c0-0.3-0.3-0.6-0.6-0.6l0,0c-0.3,0-0.6,0.3-0.6,0.6v23
+    C81.6,26.8,81.9,27.1,82.2,27.1z" />
+                <path d="M74.7,18.2L74.7,18.2c0.3,0.2,0.7,0,0.8-0.3l7.2-14.2c0.2-0.3,0-0.7-0.3-0.8v0c-0.3-0.2-0.7,0-0.8,0.3l-7.2,14.2
+    C74.3,17.7,74.4,18.1,74.7,18.2z" />
+              </g>
+            </g>
+          </svg>
+
+          <section class="hero padding-y-lg reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="1000">
+            <div class="container max-width-adaptive-sm">
+              <div class="flex flex-column gap-sm text-center">
+                <p class="text-sm color-contrast-low text-capitalize">NCAA | SPORTS</p>
+                <h1>Revamp NCAA College Football</h1>
+                <p class="line-height-lg">Changing NCAA College Football to a new and improved format allows all teams
+                  to succeed and resolves current format issues.</p>
+                <div class="flex flex-wrap gap-sm flex-center">
+                  <a href="#0" class="btn btn--primary color-black">Sign Petition</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <section class="feature-v10">
+      <div class="feature-v10__item bg padding-y-xl padding-top-2xl@md padding-bottom-0@md">
+        <div class="container max-width-adaptive-lg">
+          <div class="grid">
+            <a class="feature-v10__img-link col-6@md" href="issues.html">
+              <img class="feature-v10__media" src="img/svg/ncaa-issues.svg" alt="Image description" />
             </a>
+
+            <div class="feature-v10__content bg-dark col-6@md">
+              <div class="height-100% flex flex-column gap-sm padding-md">
+                <h2>Current Issues</h2>
+                <p class="margin-top-auto">
+                  <a href="issues.html" class="feature-v10__link"><i>Learn More</i></a>
+                </p>
+              </div>
+            </div>
           </div>
-
-          <ul class="f-header__list flex-grow flex-basis-0 justify-center@md">
-            <li class="f-header__item"><a href="issues.html" class="f-header__link">Issues</a></li>
-            <li class="f-header__item">
-              <a href="proposal.html" class="f-header__link">Proposal</a>
-            </li>
-            <li class="f-header__item"><a href="faq.html" class="f-header__link">FAQ</a></li>
-          </ul>
-
-          <ul class="f-header__list flex-grow flex-basis-0 justify-end@md">
-            <li class="f-header__item">
-              <a href="#0" class="f-header__btn btn btn--primary color-black">Sign Petition</a>
-            </li>
-          </ul>
         </div>
       </div>
-    </header>
 
-    <main>
-      <div class="intro">
-        <div class="intro__background-image padding-y-md reveal-fx">
-          <div class="intro__content reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="500">
-            <svg viewBox="0 0 175 30" style="enable-background: new 0 0 175 30">
-              <g fill="var(--color-white)">
-                <g>
-                  <path
-                    d="M120.2,9.8c0.9,0,1.6,0.3,2.3,0.7c0.6,0.5,1.1,1.1,1.5,1.9h8c-0.4-1.9-1.1-3.6-2.1-5c-1-1.4-2.4-2.5-4-3.3
+      <div class="feature-v10__item bg-darker padding-y-xl padding-bottom-2xl@md padding-top-0@md" data-theme="dark">
+        <div class="container max-width-adaptive-lg">
+          <div class="grid">
+            <a class="feature-v10__img-link col-6@md order-2@md" href="proposal.html">
+              <img class="feature-v10__media" src="img/svg/ncaa-new-format.svg" alt="Image description" />
+            </a>
+
+            <div class="feature-v10__content bg-light col-6@md order-1@md">
+              <div class="height-100% flex flex-column gap-sm padding-md">
+                <h2>New Format</h2>
+                <p class="margin-top-auto">
+                  <a href="proposal.html" class="feature-v10__link"><i>Learn More</i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero padding-y-2xl">
+      <div class="container max-width-adaptive-sm">
+        <div class="flex flex-column gap-sm text-center">
+          <p class="text-sm color-contrast-low text-capitalize">NCAA | SPORTS</p>
+          <h1>Join Us, Change The Future</h1>
+          <p class="line-height-lg">Join us in reshaping the future of college football. Sign the petition, and
+            together, let's bring a better format to the sport.</p>
+          <div class="flex flex-wrap gap-sm flex-center">
+            <a href="#0" class="btn btn--primary color-black">Sign Petition</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-v4 bg-black padding-y-lg">
+    <div class="container max-width-lg">
+      <nav class="footer-v4__nav">
+        <ul class="footer-v4__nav-list">
+          <li class="footer-v4__nav-item"><a href="/issues.html">Issues</a></li>
+          <li class="footer-v4__nav-item"><a href="/proposal.html">Proposal</a></li>
+          <li class="footer-v4__nav-item"><a href="/faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-v4__logo">
+        <a href="/">
+          <svg viewBox="0 0 175 30" style="enable-background: new 0 0 175 30">
+            <g fill="var(--color-white)">
+              <g>
+                <path d="M120.2,9.8c0.9,0,1.6,0.3,2.3,0.7c0.6,0.5,1.1,1.1,1.5,1.9h8c-0.4-1.9-1.1-3.6-2.1-5c-1-1.4-2.4-2.5-4-3.3
     c-1.6-0.8-3.5-1.2-5.6-1.2c-2.4,0-4.5,0.5-6.3,1.5c-1.8,1-3.1,2.4-4.1,4.3c-1,1.8-1.4,3.8-1.4,6.2c0,2.4,0.4,4.5,1.4,6.4
     c0.9,1.8,2.3,3.3,4.1,4.3c1.8,1,3.9,1.5,6.3,1.5c2.1,0,4-0.4,5.6-1.2c1.6-0.8,3-1.9,4-3.3c1.1-1.4,1.8-3.1,2.1-5h-8
     c-0.3,0.8-0.8,1.5-1.5,1.9c-0.7,0.5-1.4,0.7-2.3,0.7c-1.3,0-2.3-0.4-3-1.4c-0.7-0.9-1.1-2.2-1.1-3.8c0-1.6,0.4-2.8,1.1-3.8
     C117.9,10.3,118.9,9.8,120.2,9.8z" />
-                  <polygon points="134.5,27.1 142.1,27.1 142.1,18 149,18 149,12.2 142.1,12.2 142.1,8.9 151.7,8.9 151.7,2.9 134.5,2.9 		" />
-                  <g>
-                    <path d="M29.2,25.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,25.9,29.2,25.9z" />
-                    <path d="M29.2,14.4H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,14.4,29.2,14.4z" />
-                    <path d="M29.2,2.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,2.9,29.2,2.9z" />
-                  </g>
-                  <g>
-                    <path
-                      d="M13.4,8.6C13.2,5.3,10.3,2.9,7,2.9H0.6C0.3,2.9,0,3.1,0,3.5c0,0.3,0.3,0.6,0.6,0.6H7c2.7,0,5.2,2.1,5.3,4.8
-      c0.2,3-2.2,5.5-5.2,5.5H3.2c-0.3,0-0.6,0.3-0.6,0.6c0,0.3,0.3,0.6,0.6,0.6h2.9l5.7,11.2c0.2,0.3,0.5,0.4,0.8,0.3
-      c0.3-0.1,0.5-0.5,0.3-0.8L7.4,15.6C11,15.4,13.8,12.3,13.4,8.6z" />
-                  </g>
-                  <path
-                    d="M95.1,2.9h-6.5c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h6.5c2.7,0,5.2,2.1,5.3,4.8c0.2,3-2.2,5.5-5.2,5.5h-6.6
-    c-0.3,0-0.6,0.3-0.6,0.6v11.5h0c0,0,0,0,0,0c0,0.3,0.3,0.6,0.6,0.6c0.3,0,0.6-0.3,0.6-0.6c0,0,0,0,0,0h0V15.5h6
-    c3.7,0,6.7-3.2,6.3-7C101.2,5.3,98.4,2.9,95.1,2.9z" />
-                </g>
+                <polygon
+                  points="134.5,27.1 142.1,27.1 142.1,18 149,18 149,12.2 142.1,12.2 142.1,8.9 151.7,8.9 151.7,2.9 134.5,2.9 		" />
                 <g>
                   <path
-                    d="M173.8,16.8c0.8,1.1,1.2,2.3,1.2,3.7c0,2.1-0.7,3.8-2.1,4.9c-1.4,1.1-3.4,1.7-6,1.7h-12.7V2.9h12.3c2.5,0,4.4,0.5,5.8,1.6
+                    d="M29.2,25.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,25.9,29.2,25.9z" />
+                  <path
+                    d="M29.2,14.4H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,14.4,29.2,14.4z" />
+                  <path
+                    d="M29.2,2.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,2.9,29.2,2.9z" />
+                </g>
+                <g>
+                  <path d="M13.4,8.6C13.2,5.3,10.3,2.9,7,2.9H0.6C0.3,2.9,0,3.1,0,3.5c0,0.3,0.3,0.6,0.6,0.6H7c2.7,0,5.2,2.1,5.3,4.8
+      c0.2,3-2.2,5.5-5.2,5.5H3.2c-0.3,0-0.6,0.3-0.6,0.6c0,0.3,0.3,0.6,0.6,0.6h2.9l5.7,11.2c0.2,0.3,0.5,0.4,0.8,0.3
+      c0.3-0.1,0.5-0.5,0.3-0.8L7.4,15.6C11,15.4,13.8,12.3,13.4,8.6z" />
+                </g>
+                <path d="M95.1,2.9h-6.5c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h6.5c2.7,0,5.2,2.1,5.3,4.8c0.2,3-2.2,5.5-5.2,5.5h-6.6
+    c-0.3,0-0.6,0.3-0.6,0.6v11.5h0c0,0,0,0,0,0c0,0.3,0.3,0.6,0.6,0.6c0.3,0,0.6-0.3,0.6-0.6c0,0,0,0,0,0h0V15.5h6
+    c3.7,0,6.7-3.2,6.3-7C101.2,5.3,98.4,2.9,95.1,2.9z" />
+              </g>
+              <g>
+                <path d="M173.8,16.8c0.8,1.1,1.2,2.3,1.2,3.7c0,2.1-0.7,3.8-2.1,4.9c-1.4,1.1-3.4,1.7-6,1.7h-12.7V2.9h12.3c2.5,0,4.4,0.5,5.8,1.6
     c1.4,1.1,2.1,2.6,2.1,4.7c0,1.4-0.4,2.6-1.1,3.6c-0.7,1-1.7,1.6-3,1.9C171.8,15,173,15.7,173.8,16.8z M161.8,12.3h2.9
     c0.7,0,1.2-0.1,1.5-0.4c0.3-0.3,0.5-0.7,0.5-1.3c0-0.6-0.2-1-0.5-1.3s-0.8-0.4-1.5-0.4h-2.9V12.3z M166.7,20.6
     c0.3-0.3,0.5-0.7,0.5-1.3c0-1.2-0.7-1.7-2-1.7h-3.5V21h3.5C165.9,21,166.4,20.9,166.7,20.6z" />
-                </g>
-                <g>
-                  <path
-                    d="M39.4,27.1L39.4,27.1c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23C31.5,3.4,31.7,3,32,2.9v0c0.3-0.1,0.7,0.1,0.7,0.4l7,23
-    C39.9,26.6,39.7,27,39.4,27.1z" />
-                  <path
-                    d="M39,27.1L39,27.1c0.3,0.1,0.7-0.1,0.7-0.4l7-23c0.1-0.3-0.1-0.7-0.4-0.7v0c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23
-    C38.5,26.6,38.7,27,39,27.1z" />
-                </g>
-                <g>
-                  <path
-                    d="M54.9,2.9L54.9,2.9c0.3-0.1,0.7,0.1,0.7,0.4l7,23c0.1,0.3-0.1,0.7-0.4,0.7l0,0c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23
-    C54.4,3.4,54.6,3,54.9,2.9z" />
-                  <path
-                    d="M55.3,2.9L55.3,2.9c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23c-0.1,0.3,0.1,0.7,0.4,0.7h0c0.3,0.1,0.7-0.1,0.7-0.4l7-23
-    C55.7,3.4,55.6,3,55.3,2.9z" />
-                </g>
-                <g>
-                  <path
-                    d="M67.8,27.1L67.8,27.1c-0.3,0-0.6-0.3-0.6-0.6v-23c0-0.3,0.3-0.6,0.6-0.6l0,0c0.3,0,0.6,0.3,0.6,0.6v23
-    C68.4,26.8,68.2,27.1,67.8,27.1z" />
-                  <path
-                    d="M75.3,18.2L75.3,18.2c-0.3,0.2-0.7,0-0.8-0.3L67.3,3.8c-0.2-0.3,0-0.7,0.3-0.8v0c0.3-0.2,0.7,0,0.8,0.3l7.2,14.2
-    C75.7,17.7,75.6,18.1,75.3,18.2z" />
-                </g>
-                <g>
-                  <path
-                    d="M82.2,27.1L82.2,27.1c0.3,0,0.6-0.3,0.6-0.6v-23c0-0.3-0.3-0.6-0.6-0.6l0,0c-0.3,0-0.6,0.3-0.6,0.6v23
-    C81.6,26.8,81.9,27.1,82.2,27.1z" />
-                  <path
-                    d="M74.7,18.2L74.7,18.2c0.3,0.2,0.7,0,0.8-0.3l7.2-14.2c0.2-0.3,0-0.7-0.3-0.8v0c-0.3-0.2-0.7,0-0.8,0.3l-7.2,14.2
-    C74.3,17.7,74.4,18.1,74.7,18.2z" />
-                </g>
               </g>
-            </svg>
-
-            <section class="hero padding-y-lg reveal-fx reveal-fx--translate-up" data-reveal-fx-delay="1000">
-              <div class="container max-width-adaptive-sm">
-                <div class="flex flex-column gap-sm text-center">
-                  <p class="text-sm color-contrast-low text-capitalize">NCAA | SPORTS</p>
-                  <h1>Revamp NCAA College Football</h1>
-                  <p class="line-height-lg">Changing the NCAA College Football to a new and improved format that provides a chance for all teams to succeed and resolves current format issues.</p>
-                  <div class="flex flex-wrap gap-sm flex-center">
-                    <a href="#0" class="btn btn--primary color-black">Sign Petition</a>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
+              <g>
+                <path d="M39.4,27.1L39.4,27.1c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23C31.5,3.4,31.7,3,32,2.9v0c0.3-0.1,0.7,0.1,0.7,0.4l7,23
+    C39.9,26.6,39.7,27,39.4,27.1z" />
+                <path d="M39,27.1L39,27.1c0.3,0.1,0.7-0.1,0.7-0.4l7-23c0.1-0.3-0.1-0.7-0.4-0.7v0c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23
+    C38.5,26.6,38.7,27,39,27.1z" />
+              </g>
+              <g>
+                <path d="M54.9,2.9L54.9,2.9c0.3-0.1,0.7,0.1,0.7,0.4l7,23c0.1,0.3-0.1,0.7-0.4,0.7l0,0c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23
+    C54.4,3.4,54.6,3,54.9,2.9z" />
+                <path d="M55.3,2.9L55.3,2.9c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23c-0.1,0.3,0.1,0.7,0.4,0.7h0c0.3,0.1,0.7-0.1,0.7-0.4l7-23
+    C55.7,3.4,55.6,3,55.3,2.9z" />
+              </g>
+              <g>
+                <path d="M67.8,27.1L67.8,27.1c-0.3,0-0.6-0.3-0.6-0.6v-23c0-0.3,0.3-0.6,0.6-0.6l0,0c0.3,0,0.6,0.3,0.6,0.6v23
+    C68.4,26.8,68.2,27.1,67.8,27.1z" />
+                <path d="M75.3,18.2L75.3,18.2c-0.3,0.2-0.7,0-0.8-0.3L67.3,3.8c-0.2-0.3,0-0.7,0.3-0.8v0c0.3-0.2,0.7,0,0.8,0.3l7.2,14.2
+    C75.7,17.7,75.6,18.1,75.3,18.2z" />
+              </g>
+              <g>
+                <path d="M82.2,27.1L82.2,27.1c0.3,0,0.6-0.3,0.6-0.6v-23c0-0.3-0.3-0.6-0.6-0.6l0,0c-0.3,0-0.6,0.3-0.6,0.6v23
+    C81.6,26.8,81.9,27.1,82.2,27.1z" />
+                <path d="M74.7,18.2L74.7,18.2c0.3,0.2,0.7,0,0.8-0.3l7.2-14.2c0.2-0.3,0-0.7-0.3-0.8v0c-0.3-0.2-0.7,0-0.8,0.3l-7.2,14.2
+    C74.3,17.7,74.4,18.1,74.7,18.2z" />
+              </g>
+            </g>
+          </svg>
+        </a>
       </div>
 
-      <section class="feature-v10">
-        <div class="feature-v10__item bg padding-y-xl padding-top-2xl@md padding-bottom-0@md">
-          <div class="container max-width-adaptive-lg">
-            <div class="grid">
-              <a class="feature-v10__img-link col-6@md" href="issues.html">
-                <img class="feature-v10__media" src="img/svg/ncaa-issues.svg" alt="Image description" />
-              </a>
+      <p class="footer-v4__print">&copy; 2024. All rights reserved.</p>
 
-              <div class="feature-v10__content bg-dark col-6@md">
-                <div class="height-100% flex flex-column gap-sm padding-md">
-                  <h2>Current Issues</h2>
-                  <p class="margin-top-auto">
-                    <a href="issues.html" class="feature-v10__link"><i>Learn More</i></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-v10__item bg-darker padding-y-xl padding-bottom-2xl@md padding-top-0@md" data-theme="dark">
-          <div class="container max-width-adaptive-lg">
-            <div class="grid">
-              <a class="feature-v10__img-link col-6@md order-2@md" href="proposal.html">
-                <img class="feature-v10__media" src="img/svg/ncaa-new-format.svg" alt="Image description" />
-              </a>
-
-              <div class="feature-v10__content bg-light col-6@md order-1@md">
-                <div class="height-100% flex flex-column gap-sm padding-md">
-                  <h2>New Format</h2>
-                  <p class="margin-top-auto">
-                    <a href="proposal.html" class="feature-v10__link"><i>Learn More</i></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="hero padding-y-2xl">
-        <div class="container max-width-adaptive-sm">
-          <div class="flex flex-column gap-sm text-center">
-            <p class="text-sm color-contrast-low text-capitalize">NCAA | SPORTS</p>
-            <h1>Join Us, Change The Future</h1>
-            <p class="line-height-lg">Join us in reshaping the future of college football. Sign the petition and together, lets bring a better format to College Football.</p>
-            <div class="flex flex-wrap gap-sm flex-center">
-              <a href="#0" class="btn btn--primary color-black">Sign Petition</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer-v3 bg-black padding-y-lg">
-      <div class="footer-v3__container container max-width-lg">
-        <div class="footer-v3__logo">
-          <a href="/">
-            <svg viewBox="0 0 175 30" style="enable-background: new 0 0 175 30">
-              <g fill="var(--color-white)">
-                <g>
-                  <path
-                    d="M120.2,9.8c0.9,0,1.6,0.3,2.3,0.7c0.6,0.5,1.1,1.1,1.5,1.9h8c-0.4-1.9-1.1-3.6-2.1-5c-1-1.4-2.4-2.5-4-3.3
-    c-1.6-0.8-3.5-1.2-5.6-1.2c-2.4,0-4.5,0.5-6.3,1.5c-1.8,1-3.1,2.4-4.1,4.3c-1,1.8-1.4,3.8-1.4,6.2c0,2.4,0.4,4.5,1.4,6.4
-    c0.9,1.8,2.3,3.3,4.1,4.3c1.8,1,3.9,1.5,6.3,1.5c2.1,0,4-0.4,5.6-1.2c1.6-0.8,3-1.9,4-3.3c1.1-1.4,1.8-3.1,2.1-5h-8
-    c-0.3,0.8-0.8,1.5-1.5,1.9c-0.7,0.5-1.4,0.7-2.3,0.7c-1.3,0-2.3-0.4-3-1.4c-0.7-0.9-1.1-2.2-1.1-3.8c0-1.6,0.4-2.8,1.1-3.8
-    C117.9,10.3,118.9,9.8,120.2,9.8z" />
-                  <polygon points="134.5,27.1 142.1,27.1 142.1,18 149,18 149,12.2 142.1,12.2 142.1,8.9 151.7,8.9 151.7,2.9 134.5,2.9 		" />
-                  <g>
-                    <path d="M29.2,25.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,25.9,29.2,25.9z" />
-                    <path d="M29.2,14.4H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,14.4,29.2,14.4z" />
-                    <path d="M29.2,2.9H17.4c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h11.8c0.3,0,0.6-0.3,0.6-0.6S29.5,2.9,29.2,2.9z" />
-                  </g>
-                  <g>
-                    <path
-                      d="M13.4,8.6C13.2,5.3,10.3,2.9,7,2.9H0.6C0.3,2.9,0,3.1,0,3.5c0,0.3,0.3,0.6,0.6,0.6H7c2.7,0,5.2,2.1,5.3,4.8
-      c0.2,3-2.2,5.5-5.2,5.5H3.2c-0.3,0-0.6,0.3-0.6,0.6c0,0.3,0.3,0.6,0.6,0.6h2.9l5.7,11.2c0.2,0.3,0.5,0.4,0.8,0.3
-      c0.3-0.1,0.5-0.5,0.3-0.8L7.4,15.6C11,15.4,13.8,12.3,13.4,8.6z" />
-                  </g>
-                  <path
-                    d="M95.1,2.9h-6.5c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h6.5c2.7,0,5.2,2.1,5.3,4.8c0.2,3-2.2,5.5-5.2,5.5h-6.6
-    c-0.3,0-0.6,0.3-0.6,0.6v11.5h0c0,0,0,0,0,0c0,0.3,0.3,0.6,0.6,0.6c0.3,0,0.6-0.3,0.6-0.6c0,0,0,0,0,0h0V15.5h6
-    c3.7,0,6.7-3.2,6.3-7C101.2,5.3,98.4,2.9,95.1,2.9z" />
-                </g>
-                <g>
-                  <path
-                    d="M173.8,16.8c0.8,1.1,1.2,2.3,1.2,3.7c0,2.1-0.7,3.8-2.1,4.9c-1.4,1.1-3.4,1.7-6,1.7h-12.7V2.9h12.3c2.5,0,4.4,0.5,5.8,1.6
-    c1.4,1.1,2.1,2.6,2.1,4.7c0,1.4-0.4,2.6-1.1,3.6c-0.7,1-1.7,1.6-3,1.9C171.8,15,173,15.7,173.8,16.8z M161.8,12.3h2.9
-    c0.7,0,1.2-0.1,1.5-0.4c0.3-0.3,0.5-0.7,0.5-1.3c0-0.6-0.2-1-0.5-1.3s-0.8-0.4-1.5-0.4h-2.9V12.3z M166.7,20.6
-    c0.3-0.3,0.5-0.7,0.5-1.3c0-1.2-0.7-1.7-2-1.7h-3.5V21h3.5C165.9,21,166.4,20.9,166.7,20.6z" />
-                </g>
-                <g>
-                  <path
-                    d="M39.4,27.1L39.4,27.1c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23C31.5,3.4,31.7,3,32,2.9v0c0.3-0.1,0.7,0.1,0.7,0.4l7,23
-    C39.9,26.6,39.7,27,39.4,27.1z" />
-                  <path
-                    d="M39,27.1L39,27.1c0.3,0.1,0.7-0.1,0.7-0.4l7-23c0.1-0.3-0.1-0.7-0.4-0.7v0c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23
-    C38.5,26.6,38.7,27,39,27.1z" />
-                </g>
-                <g>
-                  <path
-                    d="M54.9,2.9L54.9,2.9c0.3-0.1,0.7,0.1,0.7,0.4l7,23c0.1,0.3-0.1,0.7-0.4,0.7l0,0c-0.3,0.1-0.7-0.1-0.7-0.4l-7-23
-    C54.4,3.4,54.6,3,54.9,2.9z" />
-                  <path
-                    d="M55.3,2.9L55.3,2.9c-0.3-0.1-0.7,0.1-0.7,0.4l-7,23c-0.1,0.3,0.1,0.7,0.4,0.7h0c0.3,0.1,0.7-0.1,0.7-0.4l7-23
-    C55.7,3.4,55.6,3,55.3,2.9z" />
-                </g>
-                <g>
-                  <path
-                    d="M67.8,27.1L67.8,27.1c-0.3,0-0.6-0.3-0.6-0.6v-23c0-0.3,0.3-0.6,0.6-0.6l0,0c0.3,0,0.6,0.3,0.6,0.6v23
-    C68.4,26.8,68.2,27.1,67.8,27.1z" />
-                  <path
-                    d="M75.3,18.2L75.3,18.2c-0.3,0.2-0.7,0-0.8-0.3L67.3,3.8c-0.2-0.3,0-0.7,0.3-0.8v0c0.3-0.2,0.7,0,0.8,0.3l7.2,14.2
-    C75.7,17.7,75.6,18.1,75.3,18.2z" />
-                </g>
-                <g>
-                  <path
-                    d="M82.2,27.1L82.2,27.1c0.3,0,0.6-0.3,0.6-0.6v-23c0-0.3-0.3-0.6-0.6-0.6l0,0c-0.3,0-0.6,0.3-0.6,0.6v23
-    C81.6,26.8,81.9,27.1,82.2,27.1z" />
-                  <path
-                    d="M74.7,18.2L74.7,18.2c0.3,0.2,0.7,0,0.8-0.3l7.2-14.2c0.2-0.3,0-0.7-0.3-0.8v0c-0.3-0.2-0.7,0-0.8,0.3l-7.2,14.2
-    C74.3,17.7,74.4,18.1,74.7,18.2z" />
-                </g>
-              </g>
-            </svg>
-          </a>
-        </div>
-
-        <nav class="footer-v3__nav">
-          <ul class="footer-v3__nav-list">
-            <li class="footer-v3__nav-item">
-              <a href="#top" class="js-smooth-scroll" data-duration="300">Back To Top</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="footer-v3__socials">
-          <a href="https://x.com/RevampCFB" target="_blank" rel="noopener noreferrer">
-            <svg class="icon" viewBox="0 0 16 16">
-              <g fill="var(--color-white)">
-                <path d="m7.2 10.2-4.4 5H.3l5.8-6.5zM8.5 5.4 12.6.8h2.5L9.7 6.9z" />
-                <path d="M16 15.2h-4.9L0 .8h5.1L16 15.2zm-4.3-1.4h1.4L4.3 2.2H2.9l8.8 11.6z" />
-              </g>
-            </svg>
-          </a>
-        </div>
+      <div class="footer-v4__socials">
+        <a href="https://x.com/RevampCFB" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 16 16">
+            <g fill="var(--color-white)">
+              <path d="m7.2 10.2-4.4 5H.3l5.8-6.5zM8.5 5.4 12.6.8h2.5L9.7 6.9z" />
+              <path d="M16 15.2h-4.9L0 .8h5.1L16 15.2zm-4.3-1.4h1.4L4.3 2.2H2.9l8.8 11.6z" />
+            </g>
+          </svg>
+        </a>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="js/scripts.js" nonce="sha256-Bed9qzUU2IVkAAxp73fh88GAnMchALEvifOr4XcPQ/4="></script>
-  </body>
+  <a class="back-to-top js-back-to-top" href="#top" data-offset="100">
+    <svg class="icon" viewBox="0 0 20 20">
+      <polyline points="2 13 10 5 18 13" fill="none" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2" />
+    </svg>
+  </a>
+
+  <script src="js/scripts.js" nonce="sha256-Bed9qzUU2IVkAAxp73fh88GAnMchALEvifOr4XcPQ/4="></script>
+</body>
+
 </html>
