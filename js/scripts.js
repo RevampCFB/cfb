@@ -2930,9 +2930,11 @@ Math.easeOutQuart = function (t, b, c, d) {
         legend: "Total ($ Millions)",
         labels: true,
       },
-      datasets: [{
-        data: [62.5, 50, 31.67, 17.14]
-      }],
+      datasets: [
+        {
+          data: [62.5, 50, 31.67, 17.14],
+        },
+      ],
       column: {
         width: "60%",
         gap: "2px",
@@ -2941,13 +2943,7 @@ Math.easeOutQuart = function (t, b, c, d) {
       tooltip: {
         enabled: true,
         customHTML: function (index, chartOptions, datasetIndex) {
-          return (
-            '<span class="color-contrast-medium">' +
-            chartOptions.xAxis.labels[index] +
-            ":</span> $" +
-            chartOptions.datasets[datasetIndex].data[index] +
-            " M"
-          );
+          return '<span class="color-contrast-medium">' + chartOptions.xAxis.labels[index] + ":</span> $" + chartOptions.datasets[datasetIndex].data[index] + " M";
         },
       },
       animate: true,
@@ -2961,7 +2957,7 @@ Math.easeOutQuart = function (t, b, c, d) {
       type: "column",
       xAxis: {
         line: true,
-        labels: ["Premier", "Elite", "Champion", "Contender", "Competitor", "Rookie"],
+        labels: ["A", "B", "C", "D", "E", "F"],
         legend: "Annual Revenue Per Team",
         ticks: true,
       },
@@ -2969,9 +2965,11 @@ Math.easeOutQuart = function (t, b, c, d) {
         legend: "Total ($ Millions)",
         labels: true,
       },
-      datasets: [{
-        data: [75, 50, 25, 15, 8, 4]
-      }],
+      datasets: [
+        {
+          data: [75, 50, 25, 15, 8, 4],
+        },
+      ],
       column: {
         width: "60%",
         gap: "2px",
@@ -2980,13 +2978,42 @@ Math.easeOutQuart = function (t, b, c, d) {
       tooltip: {
         enabled: true,
         customHTML: function (index, chartOptions, datasetIndex) {
-          return (
-            '<span class="color-contrast-medium">' +
-            chartOptions.xAxis.labels[index] +
-            ":</span> $" +
-            chartOptions.datasets[datasetIndex].data[index] +
-            " M"
-          );
+          return '<span class="color-contrast-medium">' + chartOptions.xAxis.labels[index] + ":</span> $" + chartOptions.datasets[datasetIndex].data[index] + " M";
+        },
+      },
+      animate: true,
+    });
+  }
+
+  var columnChart1 = document.getElementById("column-chart-opt-out");
+  if (columnChart1) {
+    new Chart({
+      element: columnChart1,
+      type: "column",
+      xAxis: {
+        line: true,
+        labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"],
+        legend: "Year",
+        ticks: true,
+      },
+      yAxis: {
+        legend: "Total",
+        labels: true,
+      },
+      datasets: [
+        {
+          data: [5, 12, 20, 30, 50, 60, 70, 80],
+        },
+      ],
+      column: {
+        width: "60%",
+        gap: "2px",
+        radius: "4px",
+      },
+      tooltip: {
+        enabled: true,
+        customHTML: function (index, chartOptions, datasetIndex) {
+          return '<span class="color-contrast-medium">' + chartOptions.xAxis.labels[index] + ":</span> $" + chartOptions.datasets[datasetIndex].data[index] + " M";
         },
       },
       animate: true,
@@ -3001,20 +3028,7 @@ Math.easeOutQuart = function (t, b, c, d) {
       type: "column",
       xAxis: {
         line: true,
-        labels: [
-          "Jan",
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
-          "Oct",
-          "Nov",
-          "Dec",
-        ],
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         legend: "Months",
         ticks: true,
       },
@@ -3022,11 +3036,12 @@ Math.easeOutQuart = function (t, b, c, d) {
         legend: "Total",
         labels: true,
       },
-      datasets: [{
-          data: [1, 2, 3, 12, 8, 7, 10, 4, 9, 5, 16, 3]
+      datasets: [
+        {
+          data: [1, 2, 3, 12, 8, 7, 10, 4, 9, 5, 16, 3],
         },
         {
-          data: [4, 8, 10, 12, 15, 11, 7, 3, 5, 2, 12, 6]
+          data: [4, 8, 10, 12, 15, 11, 7, 3, 5, 2, 12, 6],
         },
       ],
       column: {
@@ -3037,18 +3052,9 @@ Math.easeOutQuart = function (t, b, c, d) {
       tooltip: {
         enabled: true,
         customHTML: function (index, chartOptions, datasetIndex) {
-          var html =
-            '<p class="margin-bottom-2xs">Total ' + chartOptions.xAxis.labels[index] + "</p>";
-          html =
-            html +
-            '<p class="flex items-center"><span class="height-3xs width-3xs radius-50% bg-primary margin-right-2xs"></span>$' +
-            chartOptions.datasets[0].data[index] +
-            "</p>";
-          html =
-            html +
-            '<p class="flex items-center"><span class="height-3xs width-3xs radius-50% bg-contrast-higher margin-right-2xs"></span>$' +
-            chartOptions.datasets[1].data[index] +
-            "</p>";
+          var html = '<p class="margin-bottom-2xs">Total ' + chartOptions.xAxis.labels[index] + "</p>";
+          html = html + '<p class="flex items-center"><span class="height-3xs width-3xs radius-50% bg-primary margin-right-2xs"></span>$' + chartOptions.datasets[0].data[index] + "</p>";
+          html = html + '<p class="flex items-center"><span class="height-3xs width-3xs radius-50% bg-contrast-higher margin-right-2xs"></span>$' + chartOptions.datasets[1].data[index] + "</p>";
           return html;
         },
         position: "top",
@@ -3066,20 +3072,7 @@ Math.easeOutQuart = function (t, b, c, d) {
       stacked: true,
       xAxis: {
         line: true,
-        labels: [
-          "Jan",
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
-          "Oct",
-          "Nov",
-          "Dec",
-        ],
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         legend: "Months",
         ticks: true,
       },
@@ -3087,11 +3080,12 @@ Math.easeOutQuart = function (t, b, c, d) {
         legend: "Total",
         labels: true,
       },
-      datasets: [{
-          data: [1, 2, 3, 12, 8, 7, 10, 4, 9, 5, 16, 3]
+      datasets: [
+        {
+          data: [1, 2, 3, 12, 8, 7, 10, 4, 9, 5, 16, 3],
         },
         {
-          data: [4, 8, 10, 12, 15, 11, 7, 3, 5, 2, 12, 6]
+          data: [4, 8, 10, 12, 15, 11, 7, 3, 5, 2, 12, 6],
         },
       ],
       column: {
@@ -3102,18 +3096,9 @@ Math.easeOutQuart = function (t, b, c, d) {
       tooltip: {
         enabled: true,
         customHTML: function (index, chartOptions, datasetIndex) {
-          var html =
-            '<p class="margin-bottom-2xs">Total ' + chartOptions.xAxis.labels[index] + "</p>";
-          html =
-            html +
-            '<p class="flex items-center"><span class="height-3xs width-3xs radius-50% bg-primary margin-right-2xs"></span>$' +
-            chartOptions.datasets[0].data[index] +
-            "</p>";
-          html =
-            html +
-            '<p class="flex items-center"><span class="height-3xs width-3xs radius-50% bg-contrast-higher margin-right-2xs"></span>$' +
-            chartOptions.datasets[1].data[index] +
-            "</p>";
+          var html = '<p class="margin-bottom-2xs">Total ' + chartOptions.xAxis.labels[index] + "</p>";
+          html = html + '<p class="flex items-center"><span class="height-3xs width-3xs radius-50% bg-primary margin-right-2xs"></span>$' + chartOptions.datasets[0].data[index] + "</p>";
+          html = html + '<p class="flex items-center"><span class="height-3xs width-3xs radius-50% bg-contrast-higher margin-right-2xs"></span>$' + chartOptions.datasets[1].data[index] + "</p>";
           return html;
         },
         position: "top",
@@ -3130,20 +3115,7 @@ Math.easeOutQuart = function (t, b, c, d) {
       type: "column",
       xAxis: {
         line: true,
-        labels: [
-          "Jan",
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
-          "Oct",
-          "Nov",
-          "Dec",
-        ],
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         legend: "Months",
         ticks: true,
       },
@@ -3151,9 +3123,11 @@ Math.easeOutQuart = function (t, b, c, d) {
         legend: "Total",
         labels: true,
       },
-      datasets: [{
-        data: [1, 4, 8, 5, 3, -2, -5, -7, 4, 9, 5, 10, 3]
-      }],
+      datasets: [
+        {
+          data: [1, 4, 8, 5, 3, -2, -5, -7, 4, 9, 5, 10, 3],
+        },
+      ],
       column: {
         width: "60%",
         gap: "2px",
@@ -3162,19 +3136,14 @@ Math.easeOutQuart = function (t, b, c, d) {
       tooltip: {
         enabled: true,
         customHTML: function (index, chartOptions, datasetIndex) {
-          return (
-            '<span class="color-contrast-medium">' +
-            chartOptions.xAxis.labels[index] +
-            ":</span> " +
-            chartOptions.datasets[datasetIndex].data[index] +
-            "$"
-          );
+          return '<span class="color-contrast-medium">' + chartOptions.xAxis.labels[index] + ":</span> " + chartOptions.datasets[datasetIndex].data[index] + "$";
         },
       },
       animate: true,
     });
   }
 })();
+
 // File#: _1_stacking-cards
 // Usage: codyhouse.co/license
 (function () {
@@ -4038,3 +4007,101 @@ Util.toggleClass = function (el, className, bool) {
     }
   }
 })();
+
+// File#: _1_back-to-top
+// Usage: codyhouse.co/license
+(function () {
+  var backTop = document.getElementsByClassName('js-back-to-top')[0];
+  if (backTop) {
+    var dataElement = backTop.getAttribute('data-element');
+    var scrollElement = dataElement ? document.querySelector(dataElement) : window;
+    var scrollOffsetInit = parseInt(backTop.getAttribute('data-offset-in')) || parseInt(backTop.getAttribute('data-offset')) || 0,
+      scrollOffsetOutInit = parseInt(backTop.getAttribute('data-offset-out')) || 0,
+      scrollOffset = 0,
+      scrollOffsetOut = 0,
+      scrolling = false;
+
+    var targetIn = backTop.getAttribute('data-target-in') ? document.querySelector(backTop.getAttribute('data-target-in')) : false,
+      targetOut = backTop.getAttribute('data-target-out') ? document.querySelector(backTop.getAttribute('data-target-out')) : false;
+
+    updateOffsets();
+
+    backTop.addEventListener('click', function (event) {
+      event.preventDefault();
+      if (!window.requestAnimationFrame) {
+        scrollElement.scrollTo(0, 0);
+      } else {
+        if (dataElement) {
+          scrollElement.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        } else {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        }
+      }
+      moveFocus(document.getElementById(backTop.getAttribute('href').replace('#', '')));
+    });
+
+    checkBackToTop();
+    if (scrollOffset > 0 || scrollOffsetOut > 0) {
+      scrollElement.addEventListener("scroll", function () {
+        if (!scrolling) {
+          scrolling = true;
+          (!window.requestAnimationFrame) ? setTimeout(checkBackToTop, 250): window.requestAnimationFrame(checkBackToTop);
+        }
+      });
+    }
+
+    function checkBackToTop() {
+      updateOffsets();
+      var windowTop = scrollElement.scrollTop || document.documentElement.scrollTop;
+      if (!dataElement) windowTop = window.scrollY || document.documentElement.scrollTop;
+
+      var condition = windowTop >= scrollOffset;
+      if (scrollOffsetOut > 0) {
+        condition = (windowTop >= scrollOffset) && (window.innerHeight + windowTop < scrollOffsetOut);
+      }
+      backTop.classList.toggle('back-to-top--is-visible', condition);
+
+      // Ensure button visibility when at the bottom of the page
+      if ((window.innerHeight + windowTop) >= document.documentElement.scrollHeight) {
+        backTop.classList.add('back-to-top--is-visible');
+      }
+
+      scrolling = false;
+    }
+
+    function updateOffsets() {
+      scrollOffset = getOffset(targetIn, scrollOffsetInit, true);
+      scrollOffsetOut = getOffset(targetOut, scrollOffsetOutInit);
+    }
+
+    function getOffset(target, startOffset, bool) {
+      var offset = 0;
+      if (target) {
+        var windowTop = scrollElement.scrollTop || document.documentElement.scrollTop;
+        if (!dataElement) windowTop = window.scrollY || document.documentElement.scrollTop;
+        var boundingClientRect = target.getBoundingClientRect();
+        offset = bool ? boundingClientRect.bottom : boundingClientRect.top;
+        offset += windowTop;
+      }
+      if (startOffset) {
+        offset += parseInt(startOffset);
+      }
+      return offset;
+    }
+
+    function moveFocus(element) {
+      if (!element) element = document.body;
+      element.focus();
+      if (document.activeElement !== element) {
+        element.setAttribute('tabindex', '-1');
+        element.focus();
+      }
+    }
+  }
+}());
