@@ -3013,7 +3013,7 @@ Math.easeOutQuart = function (t, b, c, d) {
       tooltip: {
         enabled: true,
         customHTML: function (index, chartOptions, datasetIndex) {
-          return '<span class="color-contrast-medium">' + chartOptions.xAxis.labels[index] + ":</span> $" + chartOptions.datasets[datasetIndex].data[index] + " M";
+          return '<span class="color-contrast-medium">' + chartOptions.xAxis.labels[index] + ":</span> " + chartOptions.datasets[datasetIndex].data[index] + "";
         },
       },
       animate: true,
